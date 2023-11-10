@@ -1,56 +1,23 @@
 {
-  "expo": {
-    "name": "junction23-bingchilling",
-    "slug": "junction23-bingchilling",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.junction23.bingchilling",
-      "runtimeVersion": "1.0.0"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "runtimeVersion": {
-        "policy": "appVersion"
-      }
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      "react-native-health"
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "39cb1e37-9137-48df-8e08-957257940d0f"
-      }
-    },
-    "updates": {
-      "url": "https://u.expo.dev/39cb1e37-9137-48df-8e08-957257940d0f"
+    "expo": {
+        "name": "junction23-bingchilling",
+        "slug": "junction23-bingchilling",
+        "version": "1.0.0",
+        "sdkVersion": "49.0.0",
+        "platforms": ["ios", "android", "web"],
+        "ios": {
+            "bundleIdentifier": "com.junction23.bingchilling",
+            "infoPlist": {
+                "NSMotionUsageDescription": "Allow $(PRODUCT_NAME) to access your device motion."
+            }
+        },
+        "plugins": [
+            [
+                "expo-sensors",
+                {
+                    "motionPermission": "Allow $(PRODUCT_NAME) to access your device motion."
+                }
+            ]
+        ]
     }
-  }
 }
