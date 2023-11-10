@@ -11,8 +11,8 @@ import {
     SafeAreaView,
 } from 'react-native';
 
-import { ScreenHeaderButton } from '../components';
-import { COLORS } from '../constants';
+import { ScreenHeaderButton } from '../../components';
+import { COLORS } from '../../constants';
 
 const Progress = () => {
     const handleBack = () => {

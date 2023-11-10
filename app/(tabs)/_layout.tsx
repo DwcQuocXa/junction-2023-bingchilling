@@ -7,6 +7,7 @@ const _layout = () => {
             <Tabs.Screen name="challenge" />
             <Tabs.Screen name="home" />
             <Tabs.Screen name="chat" />
+            <Tabs.Screen name="progress" />
         </Tabs>
     );
 };
