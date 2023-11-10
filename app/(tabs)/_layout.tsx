@@ -6,7 +6,12 @@ const _layout = () => {
         <Tabs>
             <Tabs.Screen name="home" />
             <Tabs.Screen name="progress" />
-            {/*<Tabs.Screen name="send-challenge" />*/}
+            <Tabs.Screen
+                name="send-challenge/index"
+                options={{
+                    title: 'Send Challenge',
+                }}
+            />
             <Tabs.Screen name="chat" />
             <Tabs.Screen name="profile" />
         </Tabs>
