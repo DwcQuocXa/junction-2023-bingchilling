@@ -1,0 +1,54 @@
+name: ci-pipeline
+run-name: ${github.actor} running CI workflows
+on:
+  push: 
+    branches: 
+      - hackathon
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Cache Node Modules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-   
+            ${{ runner.os }}-build- 
+            ${{ runner.os }}-
+      - name: Install dependencies
+        run: npm install
+      - name: Check Lint
+        run: npm run lint
+      - name: Test
+        run: npm run ci:test
+  publish:
+    name: Install and publish
+    runs-on: ubuntu-latest
+    needs: [lint-and-test]
+    steps:
+      - uses: actions/checkout@v4
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: 🏗 Setup EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: 📦 Install dependencies
+        run: npm install
+      - name: 🚀 Update app
+        uses: expo/expo-github-action/preview@v8
+        with:
+          command: eas update --auto
