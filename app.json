@@ -5,11 +5,14 @@
         "version": "1.0.0",
         "sdkVersion": "49.0.0",
         "platforms": ["ios", "android", "web"],
+        "owner": "nguyenfamj",
+        "scheme": "junction23.bingchilling",
         "ios": {
             "bundleIdentifier": "com.junction23.bingchilling",
             "infoPlist": {
                 "NSMotionUsageDescription": "Allow $(PRODUCT_NAME) to access your device motion."
-            }
+            },
+            "googleServicesFile": "./GoogleService-Info.plist"
         },
         "plugins": [
             [
@@ -17,8 +20,22 @@
                 {
                     "motionPermission": "Allow $(PRODUCT_NAME) to access your device motion."
                 }
+            ],
+            "@react-native-firebase/app",
+            [
+                "expo-build-properties",
+                {
+                    "android": {
+                        "compileSdkVersion": 31,
+                        "targetSdkVersion": 31,
+                        "buildToolsVersion": "31.0.0"
+                    },
+
+                    "ios": {
+                        "useFrameworks": "static"
+                    }
+                }
             ]
         ]
     }
 }
-

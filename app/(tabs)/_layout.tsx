@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-const _layout = () => {
+const Layout = () => {
     return (
         <Tabs>
             <Tabs.Screen name="home" />
@@ -13,4 +13,4 @@ const _layout = () => {
     );
 };
 
-export default _layout;
+export default Layout;
