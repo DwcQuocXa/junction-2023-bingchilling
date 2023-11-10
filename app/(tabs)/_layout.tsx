@@ -6,7 +6,7 @@ const _layout = () => {
         <Tabs>
             <Tabs.Screen name="home" />
             <Tabs.Screen name="progress" />
-            <Tabs.Screen name="challenge" />
+            {/*<Tabs.Screen name="send-challenge" />*/}
             <Tabs.Screen name="chat" />
             <Tabs.Screen name="profile" />
         </Tabs>
