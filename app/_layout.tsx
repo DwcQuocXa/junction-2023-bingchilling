@@ -1,8 +1,11 @@
 import { View } from '@bacons/react-views';
 import { Stack } from 'expo-router';
 import React from 'react';
+import { Text } from 'react-native';
 
+import { ScreenHeaderButton } from '../components';
 import Footer from '../components/common/Footer';
+import { COLORS } from '../constants';
 
 type Props = object;
 

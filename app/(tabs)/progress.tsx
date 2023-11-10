@@ -45,8 +45,10 @@ const Progress = () => {
                     </View>
 
                     {/* Active chart section */}
-                    <View style={styles.chartSection}>
-                        <Text>Active chart</Text>
+                    <View style={styles.detailsContainer}>
+                        <View style={styles.chartBox}>
+                            <Text>Active chart</Text>
+                        </View>
                     </View>
 
                     {/* Other progress details */}
@@ -126,6 +128,14 @@ const styles = StyleSheet.create({
     },
     detailBox: {
         width: '48%', // Adjust the width for two columns
+        padding: 16,
+        backgroundColor: '#f0f0f0',
+        borderRadius: 8,
+        marginBottom: 8,
+        // Style as per your design
+    },
+    chartBox: {
+        width: '100%', // Adjust the width for two columns
         padding: 16,
         backgroundColor: '#f0f0f0',
         borderRadius: 8,
