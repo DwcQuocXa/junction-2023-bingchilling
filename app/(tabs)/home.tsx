@@ -1,11 +1,45 @@
 import { Link, Stack, useRouter } from 'expo-router';
-import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
+import { useState } from 'react';
+import {
+    StyleSheet,
+    Text,
+    View,
+    SafeAreaView,
+    ScrollView,
+    FlatList,
+    Dimensions,
+} from 'react-native';
 
 import { ScreenHeaderButton } from '../../components';
 import Footer from '../../components/common/Footer';
 import { COLORS, SIZES } from '../../constants';
 
+const windowWidth = Dimensions.get('window').width;
+
 export default function Home() {
+    const router = useRouter();
+    const [dimensions, setDimensions] = useState({ width: 0 });
+
+    const onLayout = (event) => {
+        const { width } = event.nativeEvent.layout;
+        setDimensions({ width });
+    };
+
+    const openDailyChallengePopup = () => {
+        const route = {
+            pathname: '/daily-challenge-popup',
+        } as any;
+
+        router.push(route);
+    };
+
+    const data = [
+        { key: 'Item 1' },
+        { key: 'Item 2' },
+        { key: 'Item 3' },
+        // ... more items
+    ];
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
             <Stack.Screen
@@ -29,19 +63,76 @@ export default function Home() {
                         <Text>Này Thắng Phan! </Text>
                         <Text>Cùng đi đây ngược nào</Text>
                     </View>
-                    <ScreenHeaderButton iconName="notifications-outline" />
+                    <ScreenHeaderButton
+                        iconName="notifications-outline"
+                        handlePress={openDailyChallengePopup}
+                    />
                 </View>
                 <ScrollView style={styles.scrollView}>
+                    <Text style={styles.cardText}>Notification for daily challenge</Text>
                     <View style={styles.card_notification}>
-                        <Text style={styles.cardText}>Notification for daily challenge</Text>
+                        <FlatList
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            data={data}
+                            onLayout={onLayout}
+                            renderItem={({ item }) => (
+                                <View
+                                    style={[
+                                        styles.item,
+                                        { width: dimensions.width, height: dimensions.height },
+                                    ]}
+                                >
+                                    <Text>{item.key}</Text>
+                                </View>
+                            )}
+                            keyExtractor={(item) => item.key}
+                            pagingEnabled
+                        />
                     </View>
 
+                    <Text style={styles.cardText}>Ongoing quest</Text>
                     <View style={styles.card_quest}>
-                        <Text style={styles.cardText}>Ongoing quest</Text>
+                        <FlatList
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            data={data}
+                            onLayout={onLayout}
+                            renderItem={({ item }) => (
+                                <View
+                                    style={[
+                                        styles.item,
+                                        { width: dimensions.width, height: dimensions.height },
+                                    ]}
+                                >
+                                    <Text>{item.key}</Text>
+                                </View>
+                            )}
+                            keyExtractor={(item) => item.key}
+                            pagingEnabled
+                        />
                     </View>
 
+                    <Text style={styles.cardText}>Event</Text>
                     <View style={styles.card_event}>
-                        <Text style={styles.cardText}>Event</Text>
+                        <FlatList
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            data={data}
+                            onLayout={onLayout}
+                            renderItem={({ item }) => (
+                                <View
+                                    style={[
+                                        styles.item,
+                                        { width: dimensions.width, height: dimensions.height },
+                                    ]}
+                                >
+                                    <Text>{item.key}</Text>
+                                </View>
+                            )}
+                            keyExtractor={(item) => item.key}
+                            pagingEnabled
+                        />
                     </View>
                 </ScrollView>
             </View>
@@ -70,25 +161,22 @@ const styles = StyleSheet.create({
         marginLeft: 10,
     },
     card_notification: {
-        backgroundColor: '#f0f0f0',
-        padding: 20,
-        margin: 20,
+        paddingTop: 10,
+        paddingBottom: 10,
         borderRadius: 10,
-        height: '50%',
+        height: '120%',
     },
     card_quest: {
-        backgroundColor: '#f0f0f0',
-        padding: 20,
-        margin: 20,
+        paddingTop: 10,
+        paddingBottom: 10,
         borderRadius: 10,
-        height: '50%',
+        height: '120%',
     },
     card_event: {
-        backgroundColor: '#f0f0f0',
-        padding: 20,
-        margin: 20,
+        paddingTop: 10,
+        paddingBottom: 10,
         borderRadius: 10,
-        height: '50%',
+        height: '120%',
     },
     cardText: {
         fontSize: 16,
@@ -102,6 +190,14 @@ const styles = StyleSheet.create({
     },
 
     scrollView: {
-        margin: 8,
+        padding: 20,
+        margin: 20,
+    },
+    item: {
+        borderRadius: 10,
+        height: '100%',
+        backgroundColor: 'skyblue',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });

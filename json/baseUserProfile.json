@@ -1,0 +1,11 @@
+{
+    "gender": ["male", "female", "other"],
+    "eyeColor": ["brown", "blue", "green", "hazel"],
+    "facialFeatures": ["beard", "mustache", "goatee", "sideburns"],
+    "hairColor": ["black", "brown", "blonde", "red", "gray"],
+    "skinColor": ["dark", "medium", "light"],
+    "height": ["tall", "average", "short"],
+    "bodyType": ["athletic", "slim", "curvy", "muscular"],
+    "outfitStyle": ["casual", "formal", "sporty", "bohemian"],
+    "background": ["city", "beach", "mountains", "countryside"]
+}
