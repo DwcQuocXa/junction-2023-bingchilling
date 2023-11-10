@@ -9,7 +9,12 @@ type Props = object;
 const Layout = (props: Props) => {
     return (
         <Stack>
-            <Stack.Screen name="(tabs)" />
+            <Stack.Screen
+                name="(tabs)"
+                options={{
+                    headerShown: false, //header shown or not
+                }}
+            />
         </Stack>
     );
 };
