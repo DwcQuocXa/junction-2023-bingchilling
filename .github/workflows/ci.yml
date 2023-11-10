@@ -1,5 +1,5 @@
 name: ci-pipeline
-run-name: ${github.actor} running CI workflows
+run-name: ${{github.actor}} running CI workflows
 on:
     push:
         branches:
