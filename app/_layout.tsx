@@ -1,11 +1,5 @@
-import { View } from '@bacons/react-views';
 import { Stack } from 'expo-router';
 import React from 'react';
-import { Text } from 'react-native';
-
-import { ScreenHeaderButton } from '../components';
-import Footer from '../components/common/Footer';
-import { COLORS } from '../constants';
 
 type Props = object;
 
@@ -16,6 +10,14 @@ const Layout = (props: Props) => {
                 name="(tabs)"
                 options={{
                     headerShown: false, //header shown or not
+                }}
+            />
+            <Stack.Screen
+                name="daily-challenge-popup"
+                options={{
+                    // Set the presentation mode to modal for our modal route.
+                    presentation: 'modal',
+                    title: 'New Challenge',
                 }}
             />
         </Stack>
