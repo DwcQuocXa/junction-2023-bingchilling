@@ -1,13 +1,17 @@
 import { Stack } from 'expo-router';
 import React from 'react';
 
-type Props = object;
-
-const Layout = (props: Props) => {
+const Layout = () => {
     return (
         <Stack>
             <Stack.Screen
-                name="(tabs)"
+                name="confirm"
+                options={{
+                    headerShown: false, //header shown or not
+                }}
+            />
+            <Stack.Screen
+                name="index"
                 options={{
                     headerShown: false, //header shown or not
                 }}

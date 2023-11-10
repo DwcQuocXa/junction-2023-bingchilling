@@ -7,7 +7,7 @@ const _layout = () => {
             <Tabs.Screen name="home" />
             <Tabs.Screen name="progress" />
             <Tabs.Screen
-                name="send-challenge/index"
+                name="send-challenge"
                 options={{
                     title: 'Send Challenge',
                 }}

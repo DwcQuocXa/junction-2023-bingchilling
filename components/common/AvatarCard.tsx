@@ -1,5 +1,6 @@
+import { useRouter } from 'expo-router';
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 interface AvatarCardParams {
     avatarUrl: string;
@@ -7,11 +8,15 @@ interface AvatarCardParams {
 }
 
 const AvatarCard = ({ avatarUrl, name }: AvatarCardParams) => {
+    const router = useRouter();
+    const onChooseReceiver = () => {
+        router.push(`/send-challenge/confirm/${name}`);
+    };
     return (
-        <View style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onChooseReceiver}>
             <Image source={{ uri: avatarUrl }} style={styles.avatar} />
             <Text style={styles.name}>{name}</Text>
-        </View>
+        </TouchableOpacity>
     );
 };
 

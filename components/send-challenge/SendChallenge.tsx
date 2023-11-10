@@ -10,6 +10,7 @@ const SendChallenge = () => {
     const [query, setQuery] = useState('');
     const avatarName = Array.from({ length: 11 }, (_, i) => `${i + 1}`);
     const [filteredData, setFilteredData] = useState<string[]>(avatarName);
+
     const searchFilterFunction = (text: string) => {
         setQuery(text);
         if (text) {
@@ -23,6 +24,7 @@ const SendChallenge = () => {
             setFilteredData(avatarName);
         }
     };
+
     return (
         <ScrollView contentContainerStyle={styles.container}>
             <SearchBar
