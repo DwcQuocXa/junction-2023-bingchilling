@@ -16,7 +16,7 @@ const StyledView = styled(View);
 
 const ProfileBuilder = () => {
     const { setUser, user } = useAuth();
-    const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null);
+    const [selectedPhoto, setSelectedPhoto] = useState<number | null>(0);
     const router = useRouter();
 
     const photos = [
