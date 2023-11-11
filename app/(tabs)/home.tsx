@@ -20,11 +20,11 @@ import { useAuth } from '../../context/AuthProvider';
 const StyledText = styled(Text);
 
 export default function Home() {
-    const { user } = useAuth();
+    const { setUser, user, userChallenges } = useAuth();
     const onChooseChallenge = (challenge: any) => {
         router.push({
             pathname: `/challenge-modal/${challenge.id}`,
-            params: { challengeType: 'challenges' },
+            params: {},
         } as any);
     };
     const [dimensions, setDimensions] = useState({ width: 0 });
@@ -34,14 +34,6 @@ export default function Home() {
         setDimensions({ width });
     };
 
-    /*const openDailyChallengePopup = () => {
-        const route = {
-            pathname: '/daily-challenge-popup',
-        } as any;
-
-        router.push(route);
-    };*/
-
     const renderItem = ({ item }) => {
         return (
             <TouchableOpacity onPress={() => onChooseChallenge(item)}>
@@ -50,7 +42,7 @@ export default function Home() {
                     style={[styles.item, { width: dimensions.width, height: dimensions.height }]}
                     imageStyle={styles.item_image}
                 >
-                    <Text style={styles.item_text}>{item.title}</Text>
+                    <Text style={styles.item_text}>{item.activity}</Text>
                 </ImageBackground>
             </TouchableOpacity>
         );
@@ -82,7 +74,7 @@ export default function Home() {
                         }}
                     >
                         <Text>Hey {user?.name}</Text>
-                        <Text>Let's play football!</Text>
+                        <Text>Let's do some challenges</Text>
                     </View>
                     <ScreenHeaderButton iconName="notifications-outline" />
                 </View>
@@ -92,7 +84,7 @@ export default function Home() {
                         <FlatList
                             horizontal
                             showsHorizontalScrollIndicator={false}
-                            data={challenges}
+                            data={userChallenges}
                             onLayout={onLayout}
                             renderItem={renderItem}
                             keyExtractor={(item) => item.id}
@@ -105,7 +97,7 @@ export default function Home() {
                         <FlatList
                             horizontal
                             showsHorizontalScrollIndicator={false}
-                            data={challenges}
+                            data={userChallenges}
                             onLayout={onLayout}
                             renderItem={renderItem}
                             keyExtractor={(item) => item.id}
@@ -118,7 +110,7 @@ export default function Home() {
                         <FlatList
                             horizontal
                             showsHorizontalScrollIndicator={false}
-                            data={challenges}
+                            data={userChallenges}
                             onLayout={onLayout}
                             renderItem={renderItem}
                             keyExtractor={(item) => item.id}
@@ -199,7 +191,7 @@ const styles = StyleSheet.create({
     },
 });
 
-export const challenges = [
+/*export const challenges = [
     {
         id: '1',
         title: 'Lets cycling together',
@@ -219,4 +211,4 @@ export const challenges = [
         url: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
     },
     // ... more items
-];
+];*/

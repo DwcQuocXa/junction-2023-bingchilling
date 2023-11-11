@@ -7,9 +7,9 @@ import { AuthProvider } from '../context/AuthProvider';
 type Props = object;
 
 const Layout = (props: Props) => {
-    useEffect(() => {
+    /*useEffect(() => {
         router.replace('/challenge-modal/challenge-reminder-modal');
-    }, []);
+    }, []);*/
     return (
         <SafeAreaProvider>
             <AuthProvider>

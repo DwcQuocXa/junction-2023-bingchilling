@@ -1,10 +1,11 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome5';
 import { Image } from 'expo-image';
-import { useRouter } from 'expo-router';
+import { router, useRouter } from 'expo-router';
 import { styled } from 'nativewind';
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, Pressable } from 'react-native';
 
+import ChallengeData from '../assets/images/challenges.json';
 import { useAuth } from '../context/AuthProvider';
 
 const StyledScrollView = styled(ScrollView);
@@ -15,7 +16,7 @@ const StyledText = styled(Text);
 const StyledView = styled(View);
 
 const ProfileBuilder = () => {
-    const { setUser, user } = useAuth();
+    const { setUser, user, userChallenges, setUserChallenges } = useAuth();
     const [selectedPhoto, setSelectedPhoto] = useState<number | null>(0);
     const router = useRouter();
 
@@ -33,7 +34,15 @@ const ProfileBuilder = () => {
     const handleConfirmPress = () => {
         // @ts-ignore
         setUser({ ...user, avatarUrl: photos[selectedPhoto] });
-        router.push('/home');
+
+        const ageGroup = Number(user.age) <= 10 ? 'K' : 'Y';
+        const challenges = ChallengeData.images.filter(
+            (challenge) => challenge.ageGroup === ageGroup
+        );
+
+        setUserChallenges(challenges);
+        /*router.push('/home');*/
+        router.replace('/challenge-modal/challenge-reminder-modal');
     };
 
     return (

@@ -3,31 +3,43 @@ import { ImageBackground } from 'nativewind/dist/preflight';
 import React, { useState } from 'react';
 import { Modal, View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-import { challenges } from '../(tabs)/home';
+import { useAuth } from '../../context/AuthProvider';
 
 const ChallengeModal = () => {
+    const { userChallenges, setUserChallenges } = useAuth();
     const params = useGlobalSearchParams();
 
-    const challenge = challenges.find((challenge) => challenge.id === params.id);
-    const onClose = () => {
+    const selectedChallenge = userChallenges.find((challenge) => challenge.id === params.id);
+    const onQuit = () => {
+        setUserChallenges(
+            userChallenges.filter((challenge) => challenge.id !== selectedChallenge.id)
+        );
         router.back(); // This will navigate to the home screen
     };
 
     const onDoneButton = () => {
         //TODO: when user finish all challenges
-        router.replace('/challenge-modal/challenge-offer-modal');
+        const remainingChallenges = userChallenges.filter(
+            (challenge) => challenge.id !== selectedChallenge.id
+        );
+        setUserChallenges(remainingChallenges);
+        if (remainingChallenges.length === 0) {
+            router.replace('/challenge-modal/challenge-offer-modal');
+        } else {
+            router.back();
+        }
     };
     return (
         <ImageBackground
-            source={{ uri: challenge.url }}
+            source={{ uri: selectedChallenge.url }}
             style={styles.item}
             imageStyle={styles.item_image}
         >
             <View style={styles.overlay} />
-            <Text style={styles.modalTextTitle}>{challenge.title}</Text>
-            <Text style={styles.modalTextDescription}>{challenge.description}</Text>
+            <Text style={styles.modalTextTitle}>{selectedChallenge.activity}</Text>
+            <Text style={styles.modalTextDescription}>{selectedChallenge.description}</Text>
             <View style={styles.buttons}>
-                <TouchableOpacity style={styles.closeButton} onPress={onClose}>
+                <TouchableOpacity style={styles.closeButton} onPress={onQuit}>
                     <Text style={styles.textStyle}>Quit</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.openButton} onPress={onDoneButton}>
