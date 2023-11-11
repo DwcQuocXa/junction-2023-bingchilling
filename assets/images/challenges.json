@@ -5,42 +5,72 @@
             "category": "Mindfullness",
             "activity": "Meditation",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e0da43b3-09c9-4312-b828-cf44b62b2254/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_3.jpg",
-            "description": "Meditation for a better mental health"
+            "description": "Meditation for a better mental health",
+            "ageGroup": "Y"
         },
         {
             "id": "2",
             "category": "Mindfullness",
             "activity": "Breath",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/55c265b1-d0e8-4bef-9bc4-dd0e307d29b3/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_2.jpg",
-            "description": "Breathing for a while to stay calm and have better performance"
+            "description": "Breathing for a while to stay calm and have better performance",
+            "ageGroup": "Y"
         },
         {
             "id": "3",
             "category": "Mindfullness",
             "activity": "Yoga",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4e5ad72a-f17c-409a-aded-59f51a0be7c3/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_2.jpg",
-            "description": "Doing yoga to have more flexible body and focus"
+            "description": "Doing yoga to have more flexible body and focus",
+            "ageGroup": "Y"
         },
         {
             "id": "4",
             "category": "Physical",
             "activity": "Running",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/dc7ee69f-06dc-4aa6-91b6-1176078fe435/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_1.jpg",
-            "description": "Running for better endurance"
+            "description": "Running for better endurance",
+            "ageGroup": "Y"
         },
         {
             "id": "5",
             "category": "Physical",
             "activity": "Push-up",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bb87da3b-205d-49e2-9220-444feec837ec/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_0.jpg",
-            "description": "A traditional activity for multiple muscle groups"
+            "description": "A traditional activity for multiple muscle groups",
+            "ageGroup": "Y"
         },
         {
             "id": "6",
             "category": "Physical",
             "activity": "Boxing",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f785b208-2488-4e51-86bd-c2983badf76b/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg",
-            "description": "Want something competitive? Boxing is good for both competitiveness and physical strenght."
+            "description": "Want something competitive? Boxing is good for both competitiveness and physical strenght.",
+            "ageGroup": "Y"
+        },
+        {
+            "id": "7",
+            "category": "For kid",
+            "activity": "Natural observation",
+            "url": "https://cdn5.vectorstock.com/i/1000x1000/09/44/children-observing-nature-vector-28060944.jpg",
+            "description": "Observe beautiful nature",
+            "ageGroup": "K"
+        },
+        {
+            "id": "8",
+            "category": "For kid",
+            "activity": "Animal moves",
+            "url": "https://previews.123rf.com/images/dualororua/dualororua1610/dualororua161000584/65488530-cute-frog-cartoon-leaping.jpg",
+            "description": "Mimic different animal movements, e.g. frog jump",
+            "ageGroup": "K"
+        },
+        {
+            "id": "9",
+            "category": "For kid",
+            "activity": "Balancing",
+            "url": "data:image/jpeg;base64,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",
+            "description": "Standing on one leg",
+            "ageGroup": "K"
         }
     ]
 }

@@ -13,10 +13,12 @@ import {
 
 import ChallengeData from '../../../../assets/images/challenges.json';
 import ImageData from '../../../../assets/images/generations.json';
+import UserData from '../../../../assets/users.json';
 
 const Confirm = () => {
     const params = useGlobalSearchParams();
     const idx = Number(params.id) || 0;
+    const user = UserData.find((user) => user.id === params.id);
 
     const [confirmed, setConfirmed] = useState(false);
     const [amount, setAmount] = useState(0);
@@ -41,7 +43,7 @@ const Confirm = () => {
                     style={styles.image}
                 />
                 <Text style={styles.titleText}>
-                    {confirmed ? 'Sent' : 'Sending'} to {`Duc Ngo ${idx + 1}`}
+                    {confirmed ? 'Sent' : 'Sending'} to {user?.name}
                 </Text>
                 {!confirmed && (
                     <Picker

@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 
 import ChallengeData from '../../../../assets/images/challenges.json';
+import UserData from '../../../../assets/users.json';
 
 interface ACTIVITY {
     id: string;
@@ -19,6 +20,17 @@ interface ACTIVITY {
     url: string;
     description?: string;
 }
+
+const AGE_LIMIT = {
+    Y: {
+        min: 10,
+        max: 30,
+    },
+    K: {
+        min: 0,
+        max: 10,
+    },
+};
 
 const CATEGORIES = ChallengeData.images
     .map((x) => x.category)
@@ -32,46 +44,57 @@ export const ACTIVITIES_CATEGORIES = CATEGORIES.map((category, i) => ({
 
 const SelectChallenge = () => {
     const params = useGlobalSearchParams();
+    const user = UserData.find((user) => user.id === params.id);
+
+    const challegeForAge = ACTIVITIES_CATEGORIES.map((x) => ({
+        ...x,
+        data: x.data.filter(
+            (challenge) =>
+                AGE_LIMIT[challenge.ageGroup].max > user?.age &&
+                user?.age >= AGE_LIMIT[challenge.ageGroup].min
+        ),
+    }));
     const onChoose = (challengeId: string) => {
         router.push({
             pathname: `/send-challenge/confirm/${params.id}`,
             params: { challengeId },
         });
     };
-    const renderCategory = ({ item }) => (
-        <View style={styles.categoryContainer}>
-            <Stack.Screen
-                options={{
-                    headerShown: false,
-                }}
-            />
-            <Text style={styles.categoryTitle}>{item.category}</Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                {item.data.map((subitem: ACTIVITY, index: number) => (
-                    <TouchableOpacity
-                        key={index}
-                        style={styles.itemContainer}
-                        onPress={() => onChoose(subitem.id)}
-                    >
-                        {/* Use your own images and styling */}
-                        <ImageBackground
-                            style={styles.image}
-                            source={{
-                                uri: subitem.url,
-                            }}
+    const renderCategory = ({ item }) =>
+        item.data.length > 0 && (
+            <View style={styles.categoryContainer}>
+                <Stack.Screen
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Text style={styles.categoryTitle}>{item.category}</Text>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                    {item.data.map((subitem: ACTIVITY, index: number) => (
+                        <TouchableOpacity
+                            key={index}
+                            style={styles.itemContainer}
+                            onPress={() => onChoose(subitem.id)}
                         >
-                            <Text style={styles.itemText}>{subitem.activity}</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-                ))}
-            </ScrollView>
-        </View>
-    );
+                            {/* Use your own images and styling */}
+                            <ImageBackground
+                                style={styles.image}
+                                source={{
+                                    uri: subitem.url,
+                                }}
+                            >
+                                <Text style={styles.itemText}>{subitem.activity}</Text>
+                            </ImageBackground>
+                        </TouchableOpacity>
+                    ))}
+                </ScrollView>
+            </View>
+        );
 
     return (
         <View style={styles.container}>
             <FlatList
-                data={ACTIVITIES_CATEGORIES}
+                data={challegeForAge}
                 renderItem={renderCategory}
                 keyExtractor={(item) => item.id}
             />

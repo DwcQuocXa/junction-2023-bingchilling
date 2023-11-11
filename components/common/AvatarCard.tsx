@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 interface AvatarCardParams {
-    id: number;
+    id: string;
     avatarUrl: string;
     name: string;
 }

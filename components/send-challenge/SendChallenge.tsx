@@ -3,26 +3,24 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 
 import ImageData from '../../assets/images/generations.json';
+import UserData from '../../assets/users.json';
 import AvatarCard from '../common/AvatarCard';
-
-const getName = (i: string) => `Duc Ngo ${i}`;
 
 const SendChallenge = () => {
     const [query, setQuery] = useState('');
-    const avatarName = Array.from({ length: 11 }, (_, i) => `${i + 1}`);
-    const [filteredData, setFilteredData] = useState<string[]>(avatarName);
+    const [filteredData, setFilteredData] = useState(UserData);
 
     const searchFilterFunction = (text: string) => {
         setQuery(text);
         if (text) {
             // Update the filtered data based on the search term
-            const newData = avatarName.filter((i) =>
-                getName(i).toLowerCase().includes(text.toLowerCase())
+            const newData = UserData.filter((user) =>
+                user.name.toLowerCase().includes(text.toLowerCase())
             );
             setFilteredData(newData);
         } else {
             // If the search bar is empty, set the filtered data to the master data
-            setFilteredData(avatarName);
+            setFilteredData(UserData);
         }
     };
 
@@ -37,12 +35,12 @@ const SendChallenge = () => {
                 autoCorrect={false}
                 containerStyle={styles.searchBar}
             />
-            {filteredData.map((i, idx) => (
+            {filteredData.map((user, idx) => (
                 <AvatarCard
-                    key={i}
-                    id={idx}
+                    key={user.id}
+                    id={user.id}
                     avatarUrl={ImageData.generations[idx].generated_images[0].url}
-                    name={getName(i)}
+                    name={user.name}
                 />
             ))}
         </ScrollView>
