@@ -3,23 +3,22 @@ import { ImageBackground } from 'nativewind/dist/preflight';
 import React, { useState } from 'react';
 import { Modal, View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-import { challenges } from '../(tabs)/home';
 import { useAuth } from '../../context/AuthProvider';
 
 const ChallengeOfferModal = () => {
     const params = useGlobalSearchParams();
-    /*const { setUser, user } = useAuth();
-
-    const challenge = challenges.find((challenge) => challenge.id === params.id);*/
+    const { setUser, user } = useAuth();
 
     const onChallengeFriends = () => {
         router.replace('/send-challenge');
     };
+
+    const dummyImageUrl =
+        'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg';
+
     return (
         <ImageBackground
-            source={{
-                uri: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
-            }}
+            source={{ uri: user?.avatarUrl ? user.avatarUrl : dummyImageUrl }}
             style={styles.item}
             imageStyle={styles.item_image}
         >

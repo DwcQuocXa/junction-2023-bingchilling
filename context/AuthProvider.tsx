@@ -1,6 +1,8 @@
 import { useSegments, useRouter } from 'expo-router';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
+import ChallengeData from '../assets/images/challenges.json';
+
 type User = {
     id: string;
     name: string;
@@ -20,26 +22,15 @@ type User = {
 type AuthType = {
     user: User | null;
     setUser: (user: User | null) => void;
+    userChallenges: any[] | null;
+    setUserChallenges: (challenges: any[] | null) => void;
 };
 
-/*export const DEFAULT_USER: User = {
-    id: '123123',
-    name: 'Nguyen',
-    gender: 'female',
-    age: 12,
-    eye_color: '',
-    skin_tone: '',
-    body_type: '',
-    hair_color: '',
-    hair_style: '',
-    outfit_style: '',
-    background: '',
-    facial_feature: '',
-};*/
-
 const AuthContext = createContext<AuthType>({
-    user: null,
+    user: null as User,
     setUser: () => {},
+    userChallenges: null as any[],
+    setUserChallenges: () => {},
 });
 
 export const useAuth = () => useContext(AuthContext);
@@ -60,13 +51,16 @@ function useProtectedRoute(user: any) {
 }
 
 export function AuthProvider({ children }: { children: JSX.Element }): JSX.Element {
-    const [user, setUser] = useState<User | null>();
+    const [user, setUser] = useState<User | null>(null);
+    const [userChallenges, setUserChallenges] = useState<any[]>([]);
 
     useProtectedRoute(user);
 
     const authContext: AuthType = {
         user,
         setUser,
+        userChallenges,
+        setUserChallenges,
     };
 
     return <AuthContext.Provider value={authContext}>{children}</AuthContext.Provider>;
