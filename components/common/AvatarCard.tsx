@@ -3,14 +3,15 @@ import React from 'react';
 import { Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 interface AvatarCardParams {
+    id: number;
     avatarUrl: string;
     name: string;
 }
 
-const AvatarCard = ({ avatarUrl, name }: AvatarCardParams) => {
+const AvatarCard = ({ id, avatarUrl, name }: AvatarCardParams) => {
     const router = useRouter();
     const onChooseReceiver = () => {
-        router.push(`/send-challenge/confirm/${name}`);
+        router.push(`/send-challenge/confirm/${id}`);
     };
     return (
         <TouchableOpacity style={styles.container} onPress={onChooseReceiver}>

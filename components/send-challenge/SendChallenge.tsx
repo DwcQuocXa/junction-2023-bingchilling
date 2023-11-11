@@ -40,6 +40,7 @@ const SendChallenge = () => {
             {filteredData.map((i, idx) => (
                 <AvatarCard
                     key={i}
+                    id={idx}
                     avatarUrl={ImageData.generations[idx].generated_images[0].url}
                     name={getName(i)}
                 />
