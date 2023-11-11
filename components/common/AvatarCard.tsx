@@ -11,7 +11,7 @@ interface AvatarCardParams {
 const AvatarCard = ({ id, avatarUrl, name }: AvatarCardParams) => {
     const router = useRouter();
     const onChooseReceiver = () => {
-        router.push(`/send-challenge/confirm/${id}`);
+        router.push(`/send-challenge/select/${id}`);
     };
     return (
         <TouchableOpacity style={styles.container} onPress={onChooseReceiver}>

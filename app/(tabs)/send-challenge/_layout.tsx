@@ -11,6 +11,12 @@ const Layout = () => {
                 }}
             />
             <Stack.Screen
+                name="select"
+                options={{
+                    headerShown: false, //header shown or not
+                }}
+            />
+            <Stack.Screen
                 name="index"
                 options={{
                     headerShown: false, //header shown or not

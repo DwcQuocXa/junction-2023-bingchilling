@@ -1,6 +1,14 @@
 import { Stack, router, useGlobalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
-import { Text, Image, TextInput, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
+import {
+    Text,
+    Image,
+    TextInput,
+    TouchableOpacity,
+    StyleSheet,
+    SafeAreaView,
+    ScrollView,
+} from 'react-native';
 
 import ImageData from '../../../../assets/images/generations.json';
 
@@ -15,51 +23,60 @@ const Confirm = () => {
     const onBack = () => router.replace('/send-challenge');
     return (
         <SafeAreaView style={styles.container}>
-            <Stack.Screen
-                options={{
-                    headerShown: false,
-                }}
-            />
-            <Text style={styles.titleText}>
-                {confirmed ? 'Sent to' : 'Sending'} {`Duc Ngo ${idx + 1}`}
-            </Text>
-            <Text style={styles.squatText}>20 push-ups</Text>
-            <Image
-                source={{ uri: ImageData.generations[idx].generated_images[0].url }} // Replace with your local image path
-                style={styles.image}
-            />
-            {confirmed && (
-                <>
-                    <Text style={styles.confirmTextBox}>{msg}</Text>
-                    <TouchableOpacity style={styles.button} onPress={onBack}>
-                        <Text style={styles.buttonText}>Back</Text>
-                    </TouchableOpacity>
-                </>
-            )}
-            {!confirmed && (
-                <>
-                    <TextInput
-                        placeholder="Lời nhắn"
-                        style={styles.input}
-                        value={msg}
-                        onChangeText={(text) => setMsg(text)}
-                    />
-                    <TouchableOpacity style={styles.button} onPress={onSend}>
-                        <Text style={styles.buttonText}>Send nude</Text>
-                    </TouchableOpacity>
-                </>
-            )}
+            <ScrollView
+                contentContainerStyle={styles.scrollContainer}
+                showsVerticalScrollIndicator={false}
+            >
+                <Stack.Screen
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Image
+                    source={{ uri: ImageData.generations[idx].generated_images[0].url }} // Replace with your local image path
+                    style={styles.image}
+                />
+                <Text style={styles.titleText}>
+                    {confirmed ? 'Sent to' : 'Sending'} {`Duc Ngo ${idx + 1}`}
+                </Text>
+                <Text style={styles.squatText}>20 {params.challengeName}</Text>
+                <Image
+                    source={{ uri: ImageData.generations[idx].generated_images[0].url }} // Replace with your local image path
+                    style={styles.activityImage}
+                />
+                {confirmed && (
+                    <>
+                        <Text style={styles.confirmTextBox}>{msg}</Text>
+                        <TouchableOpacity style={styles.button} onPress={onBack}>
+                            <Text style={styles.buttonText}>Back</Text>
+                        </TouchableOpacity>
+                    </>
+                )}
+                {!confirmed && (
+                    <>
+                        <TextInput
+                            placeholder="Lời nhắn"
+                            style={styles.input}
+                            value={msg}
+                            onChangeText={(text) => setMsg(text)}
+                        />
+                        <TouchableOpacity style={styles.button} onPress={onSend}>
+                            <Text style={styles.buttonText}>Send</Text>
+                        </TouchableOpacity>
+                    </>
+                )}
+            </ScrollView>
         </SafeAreaView>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#f5f5f5',
         padding: 20,
+    },
+    scrollContainer: {
+        alignItems: 'center',
     },
     titleText: {
         fontSize: 18,
@@ -73,6 +90,12 @@ const styles = StyleSheet.create({
         // Add additional styling as per your design
     },
     image: {
+        width: 150, // Set the width as per your layout
+        height: 150, // Set the height as per your layout
+        resizeMode: 'contain',
+        marginBottom: 20,
+    },
+    activityImage: {
         width: 300, // Set the width as per your layout
         height: 300, // Set the height as per your layout
         resizeMode: 'contain',

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 
-import AvatarCard from '../common/AvatarCard';
 import ImageData from '../../assets/images/generations.json';
+import AvatarCard from '../common/AvatarCard';
 
 const getName = (i: string) => `Duc Ngo ${i}`;
 
