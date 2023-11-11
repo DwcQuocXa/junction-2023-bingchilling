@@ -1,3 +1,4 @@
+import { Picker } from '@react-native-picker/picker';
 import { Stack, router, useGlobalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import {
@@ -18,6 +19,7 @@ const Confirm = () => {
     const idx = Number(params.id) || 0;
 
     const [confirmed, setConfirmed] = useState(false);
+    const [amount, setAmount] = useState(0);
     const [msg, setMsg] = useState('');
 
     const onSend = () => setConfirmed(true);
@@ -41,7 +43,21 @@ const Confirm = () => {
                 <Text style={styles.titleText}>
                     {confirmed ? 'Sent' : 'Sending'} to {`Duc Ngo ${idx + 1}`}
                 </Text>
-                <Text style={styles.squatText}>20 {challenge?.activity}</Text>
+                {!confirmed && (
+                    <Picker
+                        selectedValue={amount}
+                        onValueChange={(itemValue) => setAmount(itemValue)}
+                        style={styles.picker}
+                    >
+                        <Picker.Item label="5 reps" value="5" />
+                        <Picker.Item label="10 reps" value="10" />
+                        <Picker.Item label="15 reps" value="15" />
+                        <Picker.Item label="20 reps" value="20" />
+                    </Picker>
+                )}
+                <Text style={styles.squatText}>
+                    {amount} {challenge?.activity}
+                </Text>
                 <Image
                     source={{ uri: challenge?.url }} // Replace with your local image path
                     style={styles.activityImage}
@@ -84,6 +100,7 @@ const styles = StyleSheet.create({
     titleText: {
         fontSize: 18,
         marginBottom: 10,
+        fontWeight: '500',
         // Add additional styling as per your design
     },
     descriptionText: {
@@ -135,6 +152,12 @@ const styles = StyleSheet.create({
     buttonText: {
         color: '#fff',
         // Add additional styling as per your design
+    },
+    picker: {
+        height: 50,
+        width: 200,
+        borderWidth: 1,
+        borderColor: 'black',
     },
 });
 
