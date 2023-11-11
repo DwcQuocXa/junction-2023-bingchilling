@@ -10,6 +10,7 @@ import {
     ScrollView,
 } from 'react-native';
 
+import ChallengeData from '../../../../assets/images/challenges.json';
 import ImageData from '../../../../assets/images/generations.json';
 
 const Confirm = () => {
@@ -21,6 +22,7 @@ const Confirm = () => {
 
     const onSend = () => setConfirmed(true);
     const onBack = () => router.replace('/send-challenge');
+    const challenge = ChallengeData.images.find((x) => x.id === params.challengeId);
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView
@@ -37,13 +39,14 @@ const Confirm = () => {
                     style={styles.image}
                 />
                 <Text style={styles.titleText}>
-                    {confirmed ? 'Sent to' : 'Sending'} {`Duc Ngo ${idx + 1}`}
+                    {confirmed ? 'Sent' : 'Sending'} to {`Duc Ngo ${idx + 1}`}
                 </Text>
-                <Text style={styles.squatText}>20 {params.challengeName}</Text>
+                <Text style={styles.squatText}>20 {challenge?.activity}</Text>
                 <Image
-                    source={{ uri: ImageData.generations[idx].generated_images[0].url }} // Replace with your local image path
+                    source={{ uri: challenge?.url }} // Replace with your local image path
                     style={styles.activityImage}
                 />
+                <Text style={styles.descriptionText}>{challenge?.description}</Text>
                 {confirmed && (
                     <>
                         <Text style={styles.confirmTextBox}>{msg}</Text>
@@ -55,7 +58,7 @@ const Confirm = () => {
                 {!confirmed && (
                     <>
                         <TextInput
-                            placeholder="Lời nhắn"
+                            placeholder="Message"
                             style={styles.input}
                             value={msg}
                             onChangeText={(text) => setMsg(text)}
@@ -83,6 +86,11 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         // Add additional styling as per your design
     },
+    descriptionText: {
+        marginBottom: 10,
+        fontStyle: 'italic',
+        textAlign: 'center',
+    },
     squatText: {
         fontSize: 36,
         fontWeight: 'bold',
@@ -90,8 +98,8 @@ const styles = StyleSheet.create({
         // Add additional styling as per your design
     },
     image: {
-        width: 150, // Set the width as per your layout
-        height: 150, // Set the height as per your layout
+        width: 100, // Set the width as per your layout
+        height: 100, // Set the height as per your layout
         resizeMode: 'contain',
         marginBottom: 20,
     },
@@ -99,7 +107,7 @@ const styles = StyleSheet.create({
         width: 300, // Set the width as per your layout
         height: 300, // Set the height as per your layout
         resizeMode: 'contain',
-        marginBottom: 20,
+        marginBottom: 10,
     },
     input: {
         width: '100%',
@@ -122,6 +130,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'grey',
         padding: 10,
         borderRadius: 5,
+        paddingHorizontal: 40,
     },
     buttonText: {
         color: '#fff',

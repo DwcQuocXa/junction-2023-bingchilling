@@ -10,67 +10,57 @@ import {
     ImageBackground,
 } from 'react-native';
 
-import ImageData from '../../../../assets/images/generations.json';
+import ChallengeData from '../../../../assets/images/challenges.json';
 
 interface ACTIVITY {
     id: string;
-    title: string;
-    data: string[];
-    name: string;
+    activity: string;
+    category: string;
+    url: string;
+    description?: string;
 }
 
-export const ACTIVITIES_CATEGORIES: ACTIVITY[] = [
-    {
-        id: '0',
-        title: 'Mindfulness',
-        data: Array.from({ length: 20 }, (_, i) => `Meditation ${i}`),
-        name: 'Meditation',
-    },
-    {
-        id: '1',
-        title: 'Muscle',
-        data: Array.from({ length: 20 }, (_, i) => `Push-up ${i}`),
-        name: 'Push-up',
-    },
-    {
-        id: '2',
-        title: 'Outdoor activities',
-        data: Array.from({ length: 20 }, (_, i) => `Running ${i}`),
-        name: 'Running',
-    },
-];
+const CATEGORIES = ChallengeData.images
+    .map((x) => x.category)
+    .filter((value, index, array) => array.indexOf(value) === index);
+
+export const ACTIVITIES_CATEGORIES = CATEGORIES.map((category, i) => ({
+    id: `category-${i}`,
+    category,
+    data: ChallengeData.images.filter((x) => x.category === category),
+}));
 
 const SelectChallenge = () => {
     const params = useGlobalSearchParams();
-    const onChoose = (challengeId: string, challengeName: string) => {
+    const onChoose = (challengeId: string) => {
         router.push({
             pathname: `/send-challenge/confirm/${params.id}`,
-            params: { challengeId, challengeName },
+            params: { challengeId },
         });
     };
-    const renderCategory = ({ item }: { item: ACTIVITY }) => (
+    const renderCategory = ({ item }) => (
         <View style={styles.categoryContainer}>
             <Stack.Screen
                 options={{
                     headerShown: false,
                 }}
             />
-            <Text style={styles.categoryTitle}>{item.title}</Text>
+            <Text style={styles.categoryTitle}>{item.category}</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                {item.data.map((subitem: string, index: number) => (
+                {item.data.map((subitem: ACTIVITY, index: number) => (
                     <TouchableOpacity
                         key={index}
                         style={styles.itemContainer}
-                        onPress={() => onChoose(item.id, item.name)}
+                        onPress={() => onChoose(subitem.id)}
                     >
                         {/* Use your own images and styling */}
                         <ImageBackground
                             style={styles.image}
                             source={{
-                                uri: ImageData.generations[item.id].generated_images[index % 4].url,
+                                uri: subitem.url,
                             }}
                         >
-                            <Text style={styles.itemText}>{subitem}</Text>
+                            <Text style={styles.itemText}>{subitem.activity}</Text>
                         </ImageBackground>
                     </TouchableOpacity>
                 ))}
