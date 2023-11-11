@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 
 import AvatarCard from '../common/AvatarCard';
+import ImageData from '../../assets/images/generations.json';
 
 const getName = (i: string) => `Duc Ngo ${i}`;
 
@@ -36,8 +37,12 @@ const SendChallenge = () => {
                 autoCorrect={false}
                 containerStyle={styles.searchBar}
             />
-            {filteredData.map((i) => (
-                <AvatarCard key={i} avatarUrl={`assets/images/avatar/${i}.jpg`} name={getName(i)} />
+            {filteredData.map((i, idx) => (
+                <AvatarCard
+                    key={i}
+                    avatarUrl={ImageData.generations[idx].generated_images[0].url}
+                    name={getName(i)}
+                />
             ))}
         </ScrollView>
     );
