@@ -1,34 +1,45 @@
 {
     "images": [
         {
+            "id": "1",
             "category": "mindfullness",
             "activity": "meditation",
-            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e0da43b3-09c9-4312-b828-cf44b62b2254/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_3.jpg"
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e0da43b3-09c9-4312-b828-cf44b62b2254/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_3.jpg",
+            "description": "Meditation for a better mental health"
         },
         {
+            "id": "2",
             "category": "mindfullness",
             "activity": "breath",
-            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/55c265b1-d0e8-4bef-9bc4-dd0e307d29b3/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_2.jpg"
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/55c265b1-d0e8-4bef-9bc4-dd0e307d29b3/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_2.jpg",
+            "description": "Breathing for a while to stay calm and have better performance"
         },
         {
-            "category":"mindfullness",
+            "id": "3",
+            "category": "mindfullness",
             "activity": "yoga",
-            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4e5ad72a-f17c-409a-aded-59f51a0be7c3/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_2.jpg"
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4e5ad72a-f17c-409a-aded-59f51a0be7c3/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_2.jpg",
+            "description": "Doing yoga to have more flexible body and focus"
         },
         {
+            "id": "4",
             "category": "physical",
             "acitivity": "running",
             "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/dc7ee69f-06dc-4aa6-91b6-1176078fe435/3D_Animation_Style_Create_an_image_of_A_20_male_with_black_sho_1.jpg"
         },
         {
+            "id": "5",
             "category": "physical",
             "acitivity": "push-up",
-            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bb87da3b-205d-49e2-9220-444feec837ec/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_0.jpg"
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bb87da3b-205d-49e2-9220-444feec837ec/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_0.jpg",
+            "description": "A traditional activity for multiple muscle groups"
         },
         {
+            "id": "6",
             "category": "physical",
             "acitivity": "boxing",
-            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f785b208-2488-4e51-86bd-c2983badf76b/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg"
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f785b208-2488-4e51-86bd-c2983badf76b/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg",
+            "description": "Want something competitive? Boxing is good for both competitiveness and physical strenght."
         }
     ]
 }
