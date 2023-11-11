@@ -6,38 +6,75 @@ import {
     Text,
     StyleSheet,
     Image,
-    FlatList,
-    TouchableOpacity,
+    ScrollView,
     SafeAreaView,
+    TouchableOpacity,
 } from 'react-native';
 
 import { COLORS } from '../../constants';
 
-// Mock data for the leaderboard
+// Sample data for the leaderboard
 const leaderboardData = [
-    { id: '1', name: 'Naruto', points: 1470, avatar: 'https://example.com/naruto.png' },
-    { id: '2', name: 'One Piece', points: 1340, avatar: 'https://example.com/onepiece.png' },
-    { id: '3', name: 'Dragon Ball', points: 1202, avatar: 'https://example.com/dragonball.png' },
-    // ...more items
+    {
+        id: '1',
+        name: 'David',
+        points: '4578',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 1,
+    },
+    {
+        id: '2',
+        name: 'John',
+        points: '4235',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 2,
+    },
+    {
+        id: '3',
+        name: 'Merry',
+        points: '3967',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 3,
+    },
+    {
+        id: '4',
+        name: 'Merry',
+        points: '3967',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 4,
+    },
+    {
+        id: '5',
+        name: 'Merry',
+        points: '3967',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 5,
+    },
+    {
+        id: '6',
+        name: 'Merry',
+        points: '3967',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 6,
+    },
+    {
+        id: '7',
+        name: 'Merry',
+        points: '3967',
+        image: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+        rank: 7,
+    },
+    // ...more users
 ];
 
-const Leaderboard = () => {
+const LeaderboardScreen = () => {
     const handleBack = () => {
         router.back(); // This will navigate to the home screen
     };
 
-    // Function to render each item in the FlatList
-    const renderItem = ({ item, index }) => (
-        <View style={styles.listItem}>
-            <Text style={styles.rank}>{index + 1}</Text>
-            <Image source={{ uri: item.avatar }} style={styles.avatar} />
-            <Text style={styles.name}>{item.name}</Text>
-            <Text style={styles.points}>{item.points} Pts</Text>
-        </View>
-    );
-
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+        <SafeAreaView style={styles.container}>
+            {/* Header */}
             <Stack.Screen
                 options={{
                     headerStyle: { backgroundColor: COLORS.lightWhite },
@@ -46,41 +83,45 @@ const Leaderboard = () => {
                     headerShown: false, //header shown or not
                 }}
             />
-            <View style={styles.container}>
-                {/* Leaderboard Header */}
-                <View style={styles.header}>
-                    <TouchableOpacity onPress={handleBack}>
-                        <Ionicons name="arrow-back" size={24} color="black" />
-                    </TouchableOpacity>
-                    <Text style={styles.headerTitle}>Your progress</Text>
-                </View>
-
-                {/* Podium */}
-                <View style={styles.podium}>
-                    <View style={[styles.podiumItem, styles.secondPlace]}>
-                        <Text style={styles.podiumLabel}>2</Text>
-                        {/* Podium Avatar */}
-                        {/* ... */}
-                    </View>
-                    <View style={[styles.podiumItem, styles.firstPlace]}>
-                        <Text style={styles.podiumLabel}>1</Text>
-                        {/* Podium Avatar */}
-                        {/* ... */}
-                    </View>
-                    <View style={[styles.podiumItem, styles.thirdPlace]}>
-                        <Text style={styles.podiumLabel}>3</Text>
-                        {/* Podium Avatar */}
-                        {/* ... */}
-                    </View>
-                </View>
-
-                {/* Remaining Leaderboard Entries */}
-                <FlatList
-                    data={leaderboardData}
-                    renderItem={renderItem}
-                    keyExtractor={(item) => item.id}
-                />
+            <View style={styles.header}>
+                <TouchableOpacity onPress={handleBack}>
+                    <Ionicons name="arrow-back" size={24} color="white" />
+                </TouchableOpacity>
+                <Text style={styles.headerTitle}>Leaderboard</Text>
             </View>
+
+            {/* Podium */}
+            <View style={styles.podiumContainer}>
+                {leaderboardData.map((user, index) => {
+                    if (index < 3) {
+                        // Only for top 3
+                        return (
+                            <View key={user.id} style={[styles.podiumItem, { zIndex: 3 - index }]}>
+                                <Text style={styles.podiumRank}>{user.rank}</Text>
+                                <Image source={{ uri: user.image }} style={styles.podiumImage} />
+                                <Text style={styles.podiumName}>{user.name}</Text>
+                                <Text style={styles.podiumPoints}>{user.points} Pts</Text>
+                            </View>
+                        );
+                    }
+                })}
+            </View>
+
+            {/* List */}
+            <ScrollView style={styles.listContainer}>
+                {leaderboardData.map((user, index) => {
+                    if (index >= 3) {
+                        return (
+                            <View key={user.id} style={styles.listItem}>
+                                <Text style={styles.rank}>{user.rank}</Text>
+                                <Image source={{ uri: user.image }} style={styles.avatar} />
+                                <Text style={styles.name}>{user.name}</Text>
+                                <Text style={styles.points}>{user.points} Pts</Text>
+                            </View>
+                        );
+                    }
+                })}
+            </ScrollView>
         </SafeAreaView>
     );
 };
@@ -88,66 +129,98 @@ const Leaderboard = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#FFFFFF',
     },
     header: {
+        paddingVertical: 20,
+        paddingHorizontal: 10,
         flexDirection: 'row',
-        alignItems: 'center',
         justifyContent: 'space-between',
-        padding: 16,
+        alignItems: 'center',
+        backgroundColor: '#6C5B7B', // Adjust your header color here
     },
     headerTitle: {
         flex: 1,
         textAlign: 'center', // Center the title text
         fontWeight: 'bold',
         fontSize: 22,
+        color: '#FFFFFF',
     },
-    podium: {
+    podiumContainer: {
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
         alignItems: 'flex-end',
+        backgroundColor: '#6C5B7B', // Adjust your podium background color here
+        borderBottomLeftRadius: 30,
+        borderBottomRightRadius: 30,
+        paddingBottom: 20,
     },
     podiumItem: {
         alignItems: 'center',
         justifyContent: 'center',
     },
-    firstPlace: {
-        // styles for the first place
+    podiumRank: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#fff',
     },
-    secondPlace: {
-        // styles for the second place
+    podiumImage: {
+        width: 80, // Adjust size accordingly
+        height: 80, // Adjust size accordingly
+        borderRadius: 40, // Make it round
+        borderWidth: 2,
+        borderColor: '#fff',
+        marginVertical: 8,
     },
-    thirdPlace: {
-        // styles for the third place
+    podiumName: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
-    podiumLabel: {
-        // styles for the podium labels
+    podiumPoints: {
+        color: '#fff',
+        fontSize: 16,
+    },
+    listContainer: {
+        marginTop: 20,
     },
     listItem: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#F0F0F0',
-        marginVertical: 5,
+        backgroundColor: '#fff',
+        marginVertical: 8,
         marginHorizontal: 20,
-        padding: 20,
         borderRadius: 10,
+        padding: 20,
+        // Add shadows or borders as per your design
+        // shadowColor: '#000',
+        // shadowOffset: { width: 0, height: 2 },
+        // shadowOpacity: 0.25,
+        // shadowRadius: 3.84,
+        // elevation: 5,
     },
     rank: {
-        // styles for the rank text
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#333',
+        marginRight: 12,
     },
     avatar: {
         width: 50,
         height: 50,
         borderRadius: 25,
-        marginHorizontal: 10,
     },
     name: {
         flex: 1,
-        // styles for the name text
+        marginLeft: 12,
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#333',
     },
     points: {
-        // styles for the points text
+        fontSize: 18,
+        color: '#333',
     },
 });
 
-export default Leaderboard;
+export default LeaderboardScreen;

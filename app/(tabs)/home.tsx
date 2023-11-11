@@ -1,5 +1,6 @@
-import { Link, Stack, useRouter } from 'expo-router';
-import { useState } from 'react';
+import { Link, Stack, useGlobalSearchParams, router } from 'expo-router';
+import { ImageBackground } from 'nativewind/dist/preflight';
+import { useEffect, useState } from 'react';
 import {
     StyleSheet,
     Text,
@@ -7,17 +8,19 @@ import {
     SafeAreaView,
     ScrollView,
     FlatList,
-    Dimensions,
+    TouchableOpacity,
 } from 'react-native';
 
 import { ScreenHeaderButton } from '../../components';
-import Footer from '../../components/common/Footer';
 import { COLORS, SIZES } from '../../constants';
 
-const windowWidth = Dimensions.get('window').width;
-
 export default function Home() {
-    const router = useRouter();
+    const onChooseChallenge = (challenge: any) => {
+        router.push({
+            pathname: `/challenge-modal/${challenge.id}`,
+            params: { challengeType: 'challenges' },
+        } as any);
+    };
     const [dimensions, setDimensions] = useState({ width: 0 });
 
     const onLayout = (event) => {
@@ -25,20 +28,27 @@ export default function Home() {
         setDimensions({ width });
     };
 
-    const openDailyChallengePopup = () => {
+    /*const openDailyChallengePopup = () => {
         const route = {
             pathname: '/daily-challenge-popup',
         } as any;
 
         router.push(route);
-    };
+    };*/
 
-    const data = [
-        { key: 'Item 1' },
-        { key: 'Item 2' },
-        { key: 'Item 3' },
-        // ... more items
-    ];
+    const renderItem = ({ item }) => {
+        return (
+            <TouchableOpacity onPress={() => onChooseChallenge(item)}>
+                <ImageBackground
+                    source={{ uri: item.url }} // Replace with your image URL
+                    style={[styles.item, { width: dimensions.width, height: dimensions.height }]}
+                    imageStyle={styles.item_image}
+                >
+                    <Text style={styles.item_text}>{item.title}</Text>
+                </ImageBackground>
+            </TouchableOpacity>
+        );
+    };
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -63,30 +73,18 @@ export default function Home() {
                         <Text>Này Thắng Phan! </Text>
                         <Text>Cùng đi đây ngược nào</Text>
                     </View>
-                    <ScreenHeaderButton
-                        iconName="notifications-outline"
-                        handlePress={openDailyChallengePopup}
-                    />
+                    <ScreenHeaderButton iconName="notifications-outline" />
                 </View>
-                <ScrollView style={styles.scrollView}>
+                <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
                     <Text style={styles.cardText}>Notification for daily challenge</Text>
                     <View style={styles.card_notification}>
                         <FlatList
                             horizontal
                             showsHorizontalScrollIndicator={false}
-                            data={data}
+                            data={challenges}
                             onLayout={onLayout}
-                            renderItem={({ item }) => (
-                                <View
-                                    style={[
-                                        styles.item,
-                                        { width: dimensions.width, height: dimensions.height },
-                                    ]}
-                                >
-                                    <Text>{item.key}</Text>
-                                </View>
-                            )}
-                            keyExtractor={(item) => item.key}
+                            renderItem={renderItem}
+                            keyExtractor={(item) => item.id}
                             pagingEnabled
                         />
                     </View>
@@ -96,19 +94,10 @@ export default function Home() {
                         <FlatList
                             horizontal
                             showsHorizontalScrollIndicator={false}
-                            data={data}
+                            data={challenges}
                             onLayout={onLayout}
-                            renderItem={({ item }) => (
-                                <View
-                                    style={[
-                                        styles.item,
-                                        { width: dimensions.width, height: dimensions.height },
-                                    ]}
-                                >
-                                    <Text>{item.key}</Text>
-                                </View>
-                            )}
-                            keyExtractor={(item) => item.key}
+                            renderItem={renderItem}
+                            keyExtractor={(item) => item.id}
                             pagingEnabled
                         />
                     </View>
@@ -118,19 +107,10 @@ export default function Home() {
                         <FlatList
                             horizontal
                             showsHorizontalScrollIndicator={false}
-                            data={data}
+                            data={challenges}
                             onLayout={onLayout}
-                            renderItem={({ item }) => (
-                                <View
-                                    style={[
-                                        styles.item,
-                                        { width: dimensions.width, height: dimensions.height },
-                                    ]}
-                                >
-                                    <Text>{item.key}</Text>
-                                </View>
-                            )}
-                            keyExtractor={(item) => item.key}
+                            renderItem={renderItem}
+                            keyExtractor={(item) => item.id}
                             pagingEnabled
                         />
                     </View>
@@ -164,40 +144,68 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         paddingBottom: 10,
         borderRadius: 10,
-        height: '120%',
+        height: 300,
     },
     card_quest: {
         paddingTop: 10,
         paddingBottom: 10,
         borderRadius: 10,
-        height: '120%',
+        height: 300,
     },
     card_event: {
         paddingTop: 10,
         paddingBottom: 10,
         borderRadius: 10,
-        height: '120%',
+        height: 300,
     },
     cardText: {
         fontSize: 16,
     },
-    bottomNav: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        borderTopWidth: 1,
-        borderTopColor: '#ddd',
-        paddingVertical: 10,
-    },
-
     scrollView: {
         padding: 20,
         margin: 20,
     },
     item: {
-        borderRadius: 10,
+        flex: 1,
         height: '100%',
-        backgroundColor: 'skyblue',
-        justifyContent: 'center',
+        borderRadius: 10,
+        justifyContent: 'flex-end',
         alignItems: 'center',
     },
+    item_image: {
+        resizeMode: 'cover',
+        borderRadius: 10,
+        backgroundColor: 'rgba(0,0,0,0)',
+    },
+    item_text: {
+        fontSize: 16,
+        color: 'white',
+        padding: 10,
+        textAlign: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        width: '100%',
+        borderRadius: 10,
+    },
 });
+
+export const challenges = [
+    {
+        id: '1',
+        title: 'Lets cycling together',
+        description: 'Lets cycling together',
+        url: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+    },
+    {
+        id: '2',
+        title: 'Running',
+        description: 'Running',
+        url: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+    },
+    {
+        id: '3',
+        title: 'Play football',
+        description: 'Play football',
+        url: 'https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg',
+    },
+    // ... more items
+];

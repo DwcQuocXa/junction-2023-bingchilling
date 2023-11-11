@@ -12,8 +12,8 @@ const Layout = () => {
                     title: 'Send Challenge',
                 }}
             />
-            <Tabs.Screen name="chat" />
-            <Tabs.Screen name="profile" />
+            {/*<Tabs.Screen name="chat" />*/}
+            {/*<Tabs.Screen name="profile" />*/}
             <Tabs.Screen name="leaderboard" />
         </Tabs>
     );

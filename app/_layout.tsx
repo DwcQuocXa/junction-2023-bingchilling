@@ -1,5 +1,5 @@
-import { Stack } from 'expo-router';
-import React from 'react';
+import { router, Stack } from 'expo-router';
+import React, { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { AuthProvider } from '../context/AuthProvider';
@@ -7,6 +7,9 @@ import { AuthProvider } from '../context/AuthProvider';
 type Props = object;
 
 const Layout = (props: Props) => {
+    useEffect(() => {
+        router.replace('/challenge-modal/challenge-reminder-modal');
+    }, []);
     return (
         <SafeAreaProvider>
             <AuthProvider>
@@ -24,19 +27,32 @@ const Layout = (props: Props) => {
                         }}
                     />
                     <Stack.Screen
-                        name="daily-challenge-popup"
-                        options={{
-                            // Set the presentation mode to modal for our modal route.
-                            presentation: 'modal',
-                            title: 'New Challenge',
-                        }}
-                    />
-                    <Stack.Screen
                         name="profile-builder"
                         options={{
                             // Set the presentation mode to modal for our modal route.
                             presentation: 'modal',
                             title: 'Choose your avatar',
+                        }}
+                    />
+                    <Stack.Screen
+                        name="challenge-modal/[id]"
+                        options={{
+                            presentation: 'modal',
+                            title: 'Challenge',
+                        }}
+                    />
+                    <Stack.Screen
+                        name="challenge-modal/challenge-offer-modal"
+                        options={{
+                            presentation: 'modal',
+                            title: 'Challenge Your Friend',
+                        }}
+                    />
+                    <Stack.Screen
+                        name="challenge-modal/challenge-reminder-modal"
+                        options={{
+                            presentation: 'modal',
+                            title: 'Daily Challenge',
                         }}
                     />
                 </Stack>
