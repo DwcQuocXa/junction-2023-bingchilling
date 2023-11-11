@@ -4,8 +4,8 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 type User = {
     id: string;
     name: string;
-    gender: 'male' | 'female' | 'other';
-    age: number;
+    gender: string;
+    age: number | string;
     eye_color: string;
     skin_tone: string;
     body_type: string;
@@ -13,7 +13,8 @@ type User = {
     hair_style: string;
     outfit_style: string;
     background: string;
-    facial_feature: string;
+    facial_features: string;
+    avatarUrl: string;
 };
 
 type AuthType = {
