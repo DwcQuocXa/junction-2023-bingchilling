@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 20, // Adjust as needed for your layout
         alignItems: 'center',
+        backgroundColor: 'white',
     },
     categoryContainer: {
         marginBottom: 20,
