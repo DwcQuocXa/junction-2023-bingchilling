@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
         // If you want a grid of 2x4
         flexDirection: 'row',
         flexWrap: 'wrap',
+        backgroundColor: 'white',
     },
     searchBar: {
         backgroundColor: 'none',

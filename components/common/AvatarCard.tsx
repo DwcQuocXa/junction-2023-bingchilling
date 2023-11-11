@@ -24,8 +24,6 @@ const AvatarCard = ({ id, avatarUrl, name }: AvatarCardParams) => {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        backgroundColor: '#F0F0F0', // Replace with the correct background color
-        borderRadius: 20, // Adjust for proper rounding
         padding: 10, // Adjust padding as needed
     },
     avatar: {

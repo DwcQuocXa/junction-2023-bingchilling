@@ -1,5 +1,6 @@
+import { Picker } from '@react-native-picker/picker';
 import { Stack, router, useGlobalSearchParams } from 'expo-router';
-import React from 'react';
+import React, { useState } from 'react';
 import {
     View,
     Text,
@@ -43,6 +44,8 @@ export const ACTIVITIES_CATEGORIES = CATEGORIES.map((category, i) => ({
 }));
 
 const SelectChallenge = () => {
+    const [selected, setSelected] = useState<string | null>(null);
+    const [amount, setAmount] = useState(5);
     const params = useGlobalSearchParams();
     const user = UserData.find((user) => user.id === params.id);
 
@@ -55,19 +58,18 @@ const SelectChallenge = () => {
         ),
     }));
     const onChoose = (challengeId: string) => {
+        setSelected(selected === challengeId ? null : challengeId);
+    };
+
+    const onSend = () => {
         router.push({
             pathname: `/send-challenge/confirm/${params.id}`,
-            params: { challengeId },
+            params: { challengeId: selected, amount },
         });
     };
     const renderCategory = ({ item }) =>
         item.data.length > 0 && (
             <View style={styles.categoryContainer}>
-                <Stack.Screen
-                    options={{
-                        headerShown: false,
-                    }}
-                />
                 <Text style={styles.categoryTitle}>{item.category}</Text>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                     {item.data.map((subitem: ACTIVITY, index: number) => (
@@ -78,7 +80,9 @@ const SelectChallenge = () => {
                         >
                             {/* Use your own images and styling */}
                             <ImageBackground
-                                style={styles.image}
+                                style={
+                                    selected === subitem.id ? styles.imageSelected : styles.image
+                                }
                                 source={{
                                     uri: subitem.url,
                                 }}
@@ -93,19 +97,38 @@ const SelectChallenge = () => {
 
     return (
         <View style={styles.container}>
+            <Stack.Screen
+                options={{
+                    headerShown: false,
+                }}
+            />
             <FlatList
                 data={challegeForAge}
                 renderItem={renderCategory}
                 keyExtractor={(item) => item.id}
             />
+            <Picker
+                selectedValue={amount}
+                onValueChange={(itemValue) => setAmount(itemValue)}
+                style={styles.picker}
+                mode="dropdown"
+            >
+                <Picker.Item label="5 reps" value="5" />
+                <Picker.Item label="10 reps" value="10" />
+                <Picker.Item label="15 reps" value="15" />
+                <Picker.Item label="20 reps" value="20" />
+            </Picker>
+            <TouchableOpacity style={styles.button} onPress={onSend} disabled={!selected}>
+                <Text style={{ color: 'white' }}>Continue</Text>
+            </TouchableOpacity>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        marginTop: 50, // Adjust as needed for your layout
+        marginTop: 20, // Adjust as needed for your layout
+        alignItems: 'center',
     },
     categoryContainer: {
         marginBottom: 20,
@@ -128,8 +151,18 @@ const styles = StyleSheet.create({
     image: {
         width: '100%',
         height: 100, // Adjust the height as needed
-        borderRadius: 10, // Round the corners as in the design
+        borderRadius: 15, // Round the corners as in the design
         alignItems: 'center',
+        overflow: 'hidden',
+    },
+    imageSelected: {
+        width: '100%',
+        height: 100, // Adjust the height as needed
+        borderRadius: 15, // Round the corners as in the design
+        alignItems: 'center',
+        borderWidth: 3,
+        borderColor: '#0085FF',
+        overflow: 'hidden',
     },
     itemText: {
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // semi-transparent black background
@@ -141,6 +174,19 @@ const styles = StyleSheet.create({
         borderRadius: 5, // optional, if you want rounded corners
         width: '100%',
         paddingVertical: 4,
+    },
+    button: {
+        alignItems: 'center',
+        paddingHorizontal: 40,
+        width: '50%',
+        borderRadius: 10,
+        paddingVertical: 10,
+        backgroundColor: '#0085FF',
+        marginTop: 200,
+    },
+    picker: {
+        height: 50,
+        width: 200,
     },
 });
 

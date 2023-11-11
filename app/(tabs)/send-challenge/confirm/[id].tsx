@@ -1,4 +1,3 @@
-import { Picker } from '@react-native-picker/picker';
 import { Stack, router, useGlobalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import {
@@ -9,19 +8,17 @@ import {
     StyleSheet,
     SafeAreaView,
     ScrollView,
+    View,
 } from 'react-native';
 
 import ChallengeData from '../../../../assets/images/challenges.json';
-import ImageData from '../../../../assets/images/generations.json';
 import UserData from '../../../../assets/users.json';
 
 const Confirm = () => {
     const params = useGlobalSearchParams();
-    const idx = Number(params.id) || 0;
     const user = UserData.find((user) => user.id === params.id);
 
     const [confirmed, setConfirmed] = useState(false);
-    const [amount, setAmount] = useState(0);
     const [msg, setMsg] = useState('');
 
     const onSend = () => setConfirmed(true);
@@ -29,42 +26,28 @@ const Confirm = () => {
     const challenge = ChallengeData.images.find((x) => x.id === params.challengeId);
     return (
         <SafeAreaView style={styles.container}>
+            <Stack.Screen
+                options={{
+                    headerShown: false,
+                }}
+            />
             <ScrollView
                 contentContainerStyle={styles.scrollContainer}
                 showsVerticalScrollIndicator={false}
             >
-                <Stack.Screen
-                    options={{
-                        headerShown: false,
-                    }}
-                />
-                <Image
-                    source={{ uri: ImageData.generations[idx].generated_images[0].url }} // Replace with your local image path
-                    style={styles.image}
-                />
-                <Text style={styles.titleText}>
-                    {confirmed ? 'Sent' : 'Sending'} to {user?.name}
-                </Text>
-                {!confirmed && (
-                    <Picker
-                        selectedValue={amount}
-                        onValueChange={(itemValue) => setAmount(itemValue)}
-                        style={styles.picker}
-                    >
-                        <Picker.Item label="5 reps" value="5" />
-                        <Picker.Item label="10 reps" value="10" />
-                        <Picker.Item label="15 reps" value="15" />
-                        <Picker.Item label="20 reps" value="20" />
-                    </Picker>
-                )}
-                <Text style={styles.squatText}>
-                    {amount} {challenge?.activity}
-                </Text>
-                <Image
-                    source={{ uri: challenge?.url }} // Replace with your local image path
-                    style={styles.activityImage}
-                />
-                <Text style={styles.descriptionText}>{challenge?.description}</Text>
+                <View style={styles.challengeContainer}>
+                    <Text style={styles.titleText}>
+                        {confirmed ? 'Challenge sent to' : 'Challenging'} {user?.name}
+                    </Text>
+                    <Text style={styles.squatText}>
+                        {params.amount} {challenge?.activity}
+                    </Text>
+                    <Image
+                        source={{ uri: challenge?.url }} // Replace with your local image path
+                        style={styles.activityImage}
+                    />
+                    <Text style={styles.descriptionText}>{challenge?.description}</Text>
+                </View>
                 {confirmed && (
                     <>
                         <Text style={styles.confirmTextBox}>{msg}</Text>
@@ -99,10 +82,17 @@ const styles = StyleSheet.create({
     scrollContainer: {
         alignItems: 'center',
     },
+    challengeContainer: {
+        width: '100%',
+        alignItems: 'center',
+        backgroundColor: '#CCE7FF',
+        borderRadius: 15,
+        padding: 5,
+        marginBottom: 20,
+    },
     titleText: {
         fontSize: 18,
-        marginBottom: 10,
-        fontWeight: '500',
+        fontWeight: '400',
         // Add additional styling as per your design
     },
     descriptionText: {
@@ -111,9 +101,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     squatText: {
-        fontSize: 36,
-        fontWeight: 'bold',
-        marginVertical: 20,
+        fontSize: 32,
+        fontWeight: '500',
+        marginVertical: 15,
         // Add additional styling as per your design
     },
     image: {
@@ -130,23 +120,25 @@ const styles = StyleSheet.create({
     },
     input: {
         width: '100%',
+        height: 75,
         borderWidth: 1,
-        borderColor: '#000',
+        borderColor: '#0085FF',
         padding: 10,
-        borderRadius: 5,
+        borderRadius: 15,
         marginBottom: 20,
     },
     confirmTextBox: {
-        width: '80%',
+        width: '100%',
+        height: 40,
         borderWidth: 1,
         borderRadius: 10,
+        borderColor: '#0085FF',
         textAlign: 'center',
         textAlignVertical: 'center',
-        height: 30,
         marginBottom: 20,
     },
     button: {
-        backgroundColor: 'grey',
+        backgroundColor: '#0085FF',
         padding: 10,
         borderRadius: 5,
         paddingHorizontal: 40,
@@ -154,12 +146,6 @@ const styles = StyleSheet.create({
     buttonText: {
         color: '#fff',
         // Add additional styling as per your design
-    },
-    picker: {
-        height: 50,
-        width: 200,
-        borderWidth: 1,
-        borderColor: 'black',
     },
 });
 
