@@ -1,6 +1,8 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
+import ChatHeader from '../../components/header/ChatHeader';
+
 const Layout = () => {
     return (
         <Tabs>
@@ -12,7 +14,7 @@ const Layout = () => {
                     title: 'Send Challenge',
                 }}
             />
-            {/*<Tabs.Screen name="chat" />*/}
+            <Tabs.Screen name="chat" options={{ headerTitle: ChatHeader }} />
             <Tabs.Screen name="leaderboard" />
             <Tabs.Screen
                 name="profile"
