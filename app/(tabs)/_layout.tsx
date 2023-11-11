@@ -13,8 +13,13 @@ const Layout = () => {
                 }}
             />
             {/*<Tabs.Screen name="chat" />*/}
-            {/*<Tabs.Screen name="profile" />*/}
             <Tabs.Screen name="leaderboard" />
+            <Tabs.Screen
+                name="profile"
+                options={{
+                    title: 'Profile',
+                }}
+            />
         </Tabs>
     );
 };

@@ -24,13 +24,14 @@ const Layout = (props: Props) => {
                         name="(tabs)"
                         options={{
                             headerShown: false, //header shown or not
+                            gestureEnabled: false,
                         }}
                     />
                     <Stack.Screen
                         name="profile-builder"
                         options={{
                             // Set the presentation mode to modal for our modal route.
-                            presentation: 'modal',
+                            presentation: 'fullScreenModal',
                             title: 'Choose your avatar',
                         }}
                     />
