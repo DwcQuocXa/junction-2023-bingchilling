@@ -22,21 +22,6 @@ type AuthType = {
     setUser: (user: User | null) => void;
 };
 
-/*export const DEFAULT_USER: User = {
-    id: '123123',
-    name: 'Nguyen',
-    gender: 'female',
-    age: 12,
-    eye_color: '',
-    skin_tone: '',
-    body_type: '',
-    hair_color: '',
-    hair_style: '',
-    outfit_style: '',
-    background: '',
-    facial_feature: '',
-};*/
-
 const AuthContext = createContext<AuthType>({
     user: null,
     setUser: () => {},
@@ -60,7 +45,7 @@ function useProtectedRoute(user: any) {
 }
 
 export function AuthProvider({ children }: { children: JSX.Element }): JSX.Element {
-    const [user, setUser] = useState<User | null>();
+    const [user, setUser] = useState<User | null>(null);
 
     useProtectedRoute(user);
 
