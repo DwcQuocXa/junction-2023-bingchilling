@@ -52,6 +52,14 @@ const Layout = (props: Props) => {
                         }}
                     />
                     <Stack.Screen
+                        name="create-group"
+                        options={{
+                            // Set the presentation mode to modal for our modal route.
+                            presentation: 'fullScreenModal',
+                            title: 'Create group',
+                        }}
+                    />
+                    <Stack.Screen
                         name="challenge-modal/[id]"
                         options={{
                             presentation: 'modal',

@@ -1,37 +1,35 @@
-import { AntDesign } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList, StyleSheet, Image, TextInput } from 'react-native';
 
 // Dummy data for the list
 import ImageData from '../assets/images/generations.json';
 import UserData from '../assets/users.json';
-import { router } from 'expo-router';
 
 const FriendItem = ({ name, image, onSelect, isSelected }) => {
     return (
-        <View style={styles.friendItem}>
+        <TouchableOpacity style={styles.friendItem} onPress={onSelect}>
             <View style={styles.friendNameAndAvatar}>
                 <Image source={{ uri: image }} style={styles.friendImage} />
                 <Text style={styles.friendName}>{name}</Text>
             </View>
-            <TouchableOpacity
-                onPress={onSelect}
-                style={isSelected ? styles.addedButton : styles.addButton}
-            >
-                <Text style={isSelected ? styles.addedButtonText : {}}>
-                    Add{isSelected ? 'ed' : ''}
-                </Text>
+            <TouchableOpacity style={[styles.checkbox, isSelected && styles.checkboxSelected]}>
+                {isSelected && <View style={styles.checkboxInner} />}
             </TouchableOpacity>
-        </View>
+        </TouchableOpacity>
     );
 };
 
-const AddFriend = () => {
+const CreateGroup = () => {
     const [addedFriends, setAddedFriends] = useState<string[]>([]);
     const [query, setQuery] = useState('');
 
     const handleSelectFriend = (id: string) => {
-        setAddedFriends(addedFriends.concat(id));
+        if (!addedFriends.includes(id)) {
+            setAddedFriends(addedFriends.concat(id));
+        } else {
+            setAddedFriends(addedFriends.filter((friend) => friend !== id));
+        }
     };
 
     const renderFriendItem = ({ item }) => (
@@ -52,18 +50,13 @@ const AddFriend = () => {
                 style={styles.searchBar}
             />
             <TouchableOpacity
-                style={styles.newGroupButton}
-                onPress={() => router.push('/create-group')}
+                style={styles.createGroupButton}
+                onPress={() => router.push('/(tabs)/chat')}
             >
-                <AntDesign name="addusergroup" size={36} color="black" />
-                <View>
-                    <Text style={styles.newGroupButtonText}>New Group</Text>
-                    <Text style={styles.newGroupButtonSubText}>
-                        Up to 50 people, big challenge comes with big group
-                    </Text>
-                </View>
+                <Text>Create group</Text>
             </TouchableOpacity>
-            <Text style={styles.subheader}>You might know</Text>
+            <TextInput style={styles.newGroupButton} placeholder="Group name" />
+            <Text style={styles.subheader}>Friends</Text>
             <FlatList
                 data={UserData.filter((user) =>
                     user.name.toLowerCase().includes(query.toLowerCase())
@@ -125,16 +118,23 @@ const styles = StyleSheet.create({
         margin: 20,
         paddingLeft: 15,
     },
-    newGroupButton: {
+    createGroupButton: {
         backgroundColor: 'lightblue',
+        borderRadius: 15,
+        width: '50%',
+        paddingVertical: 10,
+        paddingHorizontal: 5,
+        alignItems: 'center',
+        alignSelf: 'center',
+        marginBottom: 20,
+    },
+    newGroupButton: {
+        backgroundColor: '#F0F0F0',
         borderRadius: 10,
         marginHorizontal: 20,
         marginBottom: 10,
-        paddingVertical: 20,
+        paddingVertical: 10,
         paddingHorizontal: 10,
-        alignItems: 'center',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
     },
     newGroupButtonText: {
         fontSize: 18,
@@ -146,7 +146,24 @@ const styles = StyleSheet.create({
         color: '#909090',
         fontWeight: '300',
     },
+    checkbox: {
+        height: 20,
+        width: 20,
+        borderRadius: 3, // A checkbox typically has a slight radius
+        borderWidth: 2,
+        borderColor: '#000',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    checkboxSelected: {
+        backgroundColor: 'lightblue', // or another color to indicate selection
+    },
+    checkboxInner: {
+        height: 12,
+        width: 12,
+        backgroundColor: '#000',
+    },
     // Add more styles for the search bar, new group button, and selection indicator
 });
 
-export default AddFriend;
+export default CreateGroup;

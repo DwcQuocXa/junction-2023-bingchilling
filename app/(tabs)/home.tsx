@@ -63,7 +63,7 @@ export default function Home() {
                     <ScreenHeaderButton
                         imageUrl={user?.avatarUrl}
                         handlePress={() => {
-                            router.push('/profile');
+                            router.push('/create-group');
                         }}
                     />
                     <View
