@@ -1,7 +1,7 @@
-import { Link, Stack, useGlobalSearchParams, router } from 'expo-router';
+import { Stack, router } from 'expo-router';
 import { styled } from 'nativewind';
 import { ImageBackground } from 'nativewind/dist/preflight';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 // Removed unused import statement for React
 import {
     StyleSheet,
@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 
 import { ScreenHeaderButton } from '../../components';
-import { COLORS, SIZES } from '../../constants';
+import { COLORS } from '../../constants';
 import { useAuth } from '../../context/AuthProvider';
 
 const StyledText = styled(Text);
