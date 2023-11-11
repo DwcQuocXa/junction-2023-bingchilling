@@ -1,11 +1,37 @@
 {
     "gender": ["male", "female", "other"],
     "eyeColor": ["brown", "blue", "green", "hazel"],
-    "facialFeatures": ["beard", "mustache", "goatee", "sideburns"],
-    "hairColor": ["black", "brown", "blonde", "red", "gray"],
-    "skinColor": ["dark", "medium", "light"],
+    "facialFeatures": [
+        "beard",
+        "mustache",
+        "goatee",
+        "sideburns",
+        "glasses",
+        "freckles",
+        "mole",
+        "scar",
+        "tattoo",
+        "piercing",
+        "none"
+    ],
+    "hairColor": ["black", "brown", "blonde", "red", "gray", "white", "none"],
+    "hairStyle": ["long", "short", "bald", "curly", "straight", "wavy"],
+    "skinTone": ["light", "medium", "dark"],
     "height": ["tall", "average", "short"],
-    "bodyType": ["athletic", "slim", "curvy", "muscular"],
+    "bodyType": ["athletic", "slim", "curvy", "muscular", "overweight", "none"],
     "outfitStyle": ["casual", "formal", "sporty", "bohemian"],
-    "background": ["city", "beach", "mountains", "countryside"]
+    "background": [
+        "city",
+        "beach",
+        "mountains",
+        "countryside",
+        "school",
+        "office",
+        "home",
+        "airport",
+        "restaurant",
+        "bar",
+        "party",
+        "none"
+    ]
 }
