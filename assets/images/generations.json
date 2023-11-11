@@ -1,0 +1,1538 @@
+{
+    "generations": [
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg",
+            "nsfw": false,
+            "id": "17da761a-29c8-448b-b3c5-d6569cdcfda7",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_1.jpg",
+            "nsfw": true,
+            "id": "6ac941a6-12bd-4091-82bb-f3cb29417503",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg",
+            "nsfw": true,
+            "id": "c76d08c3-7917-427d-988f-99280bf77630",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/1fa728cc-6573-41de-be38-022ce426dcfd/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_3.jpg",
+            "nsfw": false,
+            "id": "48733a34-c1a7-489a-b6b6-fca8272175ba",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create an image of: A 20 Male with black short hair and brown eyes. Distinctive facial features include none. Skin tone is light. The body type is skinny. They are dressed in workout attireBackground setting: public park. In the image, they are running.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 341386752,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "1fa728cc-6573-41de-be38-022ce426dcfd",
+        "createdAt": "2023-11-10T19:36:02.091",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4da8bfa1-29e8-446a-8c6e-e5d3ac99bbae/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg",
+            "nsfw": false,
+            "id": "a6c0ae13-b430-4471-b6a6-b7ebd5b9e9ee",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4da8bfa1-29e8-446a-8c6e-e5d3ac99bbae/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_1.jpg",
+            "nsfw": true,
+            "id": "972fe05f-db26-45c3-959b-8df048c648f3",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4da8bfa1-29e8-446a-8c6e-e5d3ac99bbae/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg",
+            "nsfw": true,
+            "id": "256b694c-8608-4db4-8000-db616900098f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/4da8bfa1-29e8-446a-8c6e-e5d3ac99bbae/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_3.jpg",
+            "nsfw": true,
+            "id": "bbf8162c-d3c1-4ee7-9a5b-76100497dbb9",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create an image of: A 20 Male with black short hair and brown eyes. Distinctive facial features include none. Skin tone is light. The body type is athletic. They are dressed in workout attireBackground setting: public park. In the image, they are running.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 664199936,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "4da8bfa1-29e8-446a-8c6e-e5d3ac99bbae",
+        "createdAt": "2023-11-10T19:34:33.44",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/c086eabc-6d6e-41af-91ba-5f431c8690a7/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg",
+            "nsfw": false,
+            "id": "81dd34ad-189b-4ce9-90c9-730f6347fe6f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/c086eabc-6d6e-41af-91ba-5f431c8690a7/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_1.jpg",
+            "nsfw": false,
+            "id": "83737206-4d3a-4b4e-bb3c-14db3f8227d9",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/c086eabc-6d6e-41af-91ba-5f431c8690a7/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg",
+            "nsfw": false,
+            "id": "d3e49c35-2982-4167-80f6-121795f513d7",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/c086eabc-6d6e-41af-91ba-5f431c8690a7/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_3.jpg",
+            "nsfw": false,
+            "id": "45180dba-1505-4df7-a467-4539d2e428a6",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create an image of: A 20 Male with black short hair and brown eyes. Distinctive facial features include none. Skin tone is light. The body type is athletic. They are dressed in casual attireBackground setting: city. In the image, they are riding a bicycle.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 368336640,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "c086eabc-6d6e-41af-91ba-5f431c8690a7",
+        "createdAt": "2023-11-10T19:32:22.132",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/3806315c-1bb6-4361-a695-bd1cd6e96706/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_0.jpg",
+            "nsfw": false,
+            "id": "1dafeacc-b03b-40f8-834c-0285c825c3cd",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/3806315c-1bb6-4361-a695-bd1cd6e96706/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_1.jpg",
+            "nsfw": false,
+            "id": "6c8ad3e0-3a90-4431-8141-c94e43c6fc62",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/3806315c-1bb6-4361-a695-bd1cd6e96706/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_2.jpg",
+            "nsfw": false,
+            "id": "80068c15-6420-43ab-9a2d-3429f991c2ed",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/3806315c-1bb6-4361-a695-bd1cd6e96706/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_3.jpg",
+            "nsfw": false,
+            "id": "f0289554-af56-490d-b839-f18dbabf421e",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create a avatar character: A 20 Male with black short hair and brown eyes. Distinctive facial features include none. Skin tone is light. The body type is athletic. They are dressed in casual attireBackground setting: city.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 621874944,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "3806315c-1bb6-4361-a695-bd1cd6e96706",
+        "createdAt": "2023-11-10T19:27:40.42",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/90adc9ee-eb37-4992-beb9-5f94b231f206/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_0.jpg",
+            "nsfw": false,
+            "id": "176a27bb-cd4d-466d-b118-622c8901e169",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/90adc9ee-eb37-4992-beb9-5f94b231f206/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_1.jpg",
+            "nsfw": false,
+            "id": "1ee3a7a2-7c5f-4f6f-9045-9ea803ff0a44",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/90adc9ee-eb37-4992-beb9-5f94b231f206/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_2.jpg",
+            "nsfw": false,
+            "id": "b4627fcc-0cd2-4b3a-9f24-c46654487b54",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/90adc9ee-eb37-4992-beb9-5f94b231f206/3D_Animation_Style_Create_a_avatar_character_A_20_Male_with_bl_3.jpg",
+            "nsfw": false,
+            "id": "17a0a8c8-1fad-447b-a070-1bc6d3cece9d",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create a avatar character: A 20 Male with black short hair and brown eyes. Distinctive facial features include none. Skin tone is light. The body type is athletic. They are dressed in casual attireBackground setting: city.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 513174528,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "90adc9ee-eb37-4992-beb9-5f94b231f206",
+        "createdAt": "2023-11-10T19:26:13.248",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22c926be-2d57-4ddb-9970-b1230f7ebb7c/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_0.jpg",
+            "nsfw": false,
+            "id": "20bc80e2-b69d-476e-9197-2083ca766cd0",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22c926be-2d57-4ddb-9970-b1230f7ebb7c/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_1.jpg",
+            "nsfw": false,
+            "id": "f80c3726-f4cc-48f5-af7f-df63d2ece6e0",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22c926be-2d57-4ddb-9970-b1230f7ebb7c/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_2.jpg",
+            "nsfw": false,
+            "id": "3a76956d-1a71-4ad0-8bdf-c7ea156e79ed",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22c926be-2d57-4ddb-9970-b1230f7ebb7c/3D_Animation_Style_Create_an_image_of_A_20_Male_with_black_sho_3.jpg",
+            "nsfw": true,
+            "id": "88de677d-456c-4b0d-bcb1-6010b3b9260a",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create an image of: A 20 Male with black short hair and brown eyes. Distinctive facial features include none. Skin tone is light. The body type is athletic. They are dressed in casual attireBackground setting: city. In the image, they are None.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 343113216,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "22c926be-2d57-4ddb-9970-b1230f7ebb7c",
+        "createdAt": "2023-11-10T19:25:16.048",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bd4b4849-ad32-412d-adf8-ea366b78e0a2/3D_Animation_Style_Avatar_Character_A_young_adult_female_with_0.jpg",
+            "nsfw": false,
+            "id": "f341c85e-a869-4790-aeb2-74e38ec41e3c",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bd4b4849-ad32-412d-adf8-ea366b78e0a2/3D_Animation_Style_Avatar_Character_A_young_adult_female_with_1.jpg",
+            "nsfw": false,
+            "id": "42605cfd-8e15-49ac-b599-d4331a481954",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bd4b4849-ad32-412d-adf8-ea366b78e0a2/3D_Animation_Style_Avatar_Character_A_young_adult_female_with_2.jpg",
+            "nsfw": false,
+            "id": "6a6462f6-8503-431c-b572-13a6819efa81",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bd4b4849-ad32-412d-adf8-ea366b78e0a2/3D_Animation_Style_Avatar_Character_A_young_adult_female_with_3.jpg",
+            "nsfw": false,
+            "id": "46459e70-b329-416b-b2f0-15f16c4a3d4e",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Avatar Character: A young adult female with brown long, straight hair and green eyes. Distinctive facial features include a small nose ring. Skin tone is medium. The body type is athletic. They are dressed in casual chic attire and accessorized with a delicate necklace and wristwatch. Pose and expression show them standing relaxed with a gentle smile. Background setting: a modern city park.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 729558528,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "bd4b4849-ad32-412d-adf8-ea366b78e0a2",
+        "createdAt": "2023-11-10T18:57:00.476",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e3646180-6c37-43ec-a4fe-7b786956c8d4/3D_Animation_Style_Design_a_nonbinary_avatar_character_with_a_0.jpg",
+            "nsfw": false,
+            "id": "d1b1a470-014e-49da-b7a2-8515de700e8e",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e3646180-6c37-43ec-a4fe-7b786956c8d4/3D_Animation_Style_Design_a_nonbinary_avatar_character_with_a_1.jpg",
+            "nsfw": false,
+            "id": "11a70a4c-c59d-4034-9c5e-8c1d5c252233",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e3646180-6c37-43ec-a4fe-7b786956c8d4/3D_Animation_Style_Design_a_nonbinary_avatar_character_with_a_2.jpg",
+            "nsfw": false,
+            "id": "846954fc-2b22-4605-886e-8be470bd9bff",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/e3646180-6c37-43ec-a4fe-7b786956c8d4/3D_Animation_Style_Design_a_nonbinary_avatar_character_with_a_3.jpg",
+            "nsfw": false,
+            "id": "ca1771e1-25e9-4d86-b008-d2d15dbb9dfd",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Design a non-binary avatar character with a medium skin tone, long pastel-colored hair, an androgynous appearance, standing at 5 feet 10 inches tall, in their early 20s, portrait shot, no background",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 569062144,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "e3646180-6c37-43ec-a4fe-7b786956c8d4",
+        "createdAt": "2023-11-10T16:53:06.366",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22677995-380c-410b-97cc-3bf8b85ba3c9/3D_Animation_Style_Design_a_woman_riding_a_bicycle_with_a_warm_0.jpg",
+            "nsfw": false,
+            "id": "f18522fe-2bd3-4f63-86c8-b8844b37923c",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22677995-380c-410b-97cc-3bf8b85ba3c9/3D_Animation_Style_Design_a_woman_riding_a_bicycle_with_a_warm_1.jpg",
+            "nsfw": false,
+            "id": "1066c21a-7b20-4ff1-9b1b-05cdb0b9df25",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22677995-380c-410b-97cc-3bf8b85ba3c9/3D_Animation_Style_Design_a_woman_riding_a_bicycle_with_a_warm_2.jpg",
+            "nsfw": false,
+            "id": "70d157b2-8cf5-416f-a21d-a2cecc61f618",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/22677995-380c-410b-97cc-3bf8b85ba3c9/3D_Animation_Style_Design_a_woman_riding_a_bicycle_with_a_warm_3.jpg",
+            "nsfw": false,
+            "id": "e01ef106-c974-44df-a24f-fd3f190d2f9e",
+            "likeCount": 0,
+            "generated_image_variation_generics": [
+              {
+                "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/0443e6a5-c51c-449a-b4e2-be076888bfd3/variations/Default_Design_a_woman_riding_a_bicycle_with_a_warm_caramel_sk_3_0443e6a5-c51c-449a-b4e2-be076888bfd3_0.png",
+                "id": "0443e6a5-c51c-449a-b4e2-be076888bfd3",
+                "status": "COMPLETE",
+                "transformType": "NOBG"
+              }
+            ]
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Design a woman riding a bicycle with a warm caramel skin tone and long, flowing chestnut hair, gracefully pedaling along a scenic path in a lush green park",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 151726336,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "22677995-380c-410b-97cc-3bf8b85ba3c9",
+        "createdAt": "2023-11-10T16:51:10.925",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/427f26dd-eec7-4239-9db9-7a750765787c/3D_Animation_Style_Design_a_transgender_avatar_character_with_0.jpg",
+            "nsfw": false,
+            "id": "e60fc9d8-41dc-4018-863b-05431968c4c1",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Design a transgender avatar character with a fair skin tone, shoulder-length wavy blonde hair, a curvy figure, standing at 5 feet 8 inches tall, in their late 30s, portrait, no background",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 476928256,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "427f26dd-eec7-4239-9db9-7a750765787c",
+        "createdAt": "2023-11-10T16:47:30.271",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f0ac0f1f-9100-4d3b-b612-a4c04339342b/3D_Animation_Style_Create_a_male_avatar_character_with_a_dark_0.jpg",
+            "nsfw": false,
+            "id": "b1d52aad-20c1-4bb8-b1f3-6088ae9ab46f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f0ac0f1f-9100-4d3b-b612-a4c04339342b/3D_Animation_Style_Create_a_male_avatar_character_with_a_dark_1.jpg",
+            "nsfw": false,
+            "id": "1a0dd038-d0df-443a-851b-58c3361f64a4",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f0ac0f1f-9100-4d3b-b612-a4c04339342b/3D_Animation_Style_Create_a_male_avatar_character_with_a_dark_2.jpg",
+            "nsfw": false,
+            "id": "19a0e94c-120a-41bc-871b-d9fa490f44b5",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f0ac0f1f-9100-4d3b-b612-a4c04339342b/3D_Animation_Style_Create_a_male_avatar_character_with_a_dark_3.jpg",
+            "nsfw": false,
+            "id": "fa61bdf4-8090-44dc-9488-c6a589f648dc",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Create a male avatar character with a dark chocolate skin tone, a shaved head, a slim and tall frame, standing at 6 feet 3 inches tall, in his mid-50s, portrait shot, no background",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": null,
+        "seed": 708694784,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "LEONARDO",
+        "initStrength": null,
+        "guidanceScale": 7,
+        "id": "f0ac0f1f-9100-4d3b-b612-a4c04339342b",
+        "createdAt": "2023-11-10T16:28:28.496",
+        "promptMagic": false,
+        "promptMagicVersion": null,
+        "promptMagicStrength": null,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/69dd78c2-7649-4446-8892-130a37a27494/3D_Animation_Style_Imagine_a_female_avatar_character_with_a_ta_0.jpg",
+            "nsfw": true,
+            "id": "965503c5-b556-4c4d-8492-f5a239691f7c",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/69dd78c2-7649-4446-8892-130a37a27494/3D_Animation_Style_Imagine_a_female_avatar_character_with_a_ta_1.jpg",
+            "nsfw": true,
+            "id": "7ae119d4-6dd8-4fdb-b8b1-6097c8003bb4",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/69dd78c2-7649-4446-8892-130a37a27494/3D_Animation_Style_Imagine_a_female_avatar_character_with_a_ta_2.jpg",
+            "nsfw": true,
+            "id": "7abd2885-9ece-4a6b-9755-58492978c862",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/69dd78c2-7649-4446-8892-130a37a27494/3D_Animation_Style_Imagine_a_female_avatar_character_with_a_ta_3.jpg",
+            "nsfw": true,
+            "id": "e0904bfd-2d47-44f7-bdb8-8dd4357b75d3",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Imagine a female avatar character with a tan skin tone, waist-length straight black hair, an athletic build, standing at 5 feet 9 inches tall, in her early 40s, portrait shot, no background",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": null,
+        "seed": 180949760,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "69dd78c2-7649-4446-8892-130a37a27494",
+        "createdAt": "2023-11-10T16:27:39.891",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/699fee2d-9316-448c-8ebb-383e694f072b/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_0.jpg",
+            "nsfw": true,
+            "id": "14c5443d-fa57-42d6-805c-4d251c4ea8e1",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/699fee2d-9316-448c-8ebb-383e694f072b/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_1.jpg",
+            "nsfw": true,
+            "id": "b0796342-31b5-41a2-a7aa-a4a284487ae7",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/699fee2d-9316-448c-8ebb-383e694f072b/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_2.jpg",
+            "nsfw": true,
+            "id": "34d54601-67e2-4b54-a36a-b59bf6daf038",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/699fee2d-9316-448c-8ebb-383e694f072b/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_3.jpg",
+            "nsfw": false,
+            "id": "781624da-30ac-45dc-bda9-ed283781f24c",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Design a male avatar character with a light olive skin tone, shoulder-length curly brown hair, a muscular build, standing at 6 feet tall, in his early 30s, portrait shot.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": null,
+        "seed": 104003840,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "699fee2d-9316-448c-8ebb-383e694f072b",
+        "createdAt": "2023-11-10T16:25:27.852",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/7846748e-2998-46ab-810c-0a5c75e77316/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_0.jpg",
+            "nsfw": true,
+            "id": "590d3748-9dc4-4674-a0e5-f887eafd3625",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/7846748e-2998-46ab-810c-0a5c75e77316/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_1.jpg",
+            "nsfw": false,
+            "id": "9475faeb-1ad3-41bc-9f60-0b76910b5688",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/7846748e-2998-46ab-810c-0a5c75e77316/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_2.jpg",
+            "nsfw": false,
+            "id": "6ec52431-f271-472c-86dd-7c53dfb2e4c2",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/7846748e-2998-46ab-810c-0a5c75e77316/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_3.jpg",
+            "nsfw": true,
+            "id": "87f7c39d-1d48-4c84-af77-e1c61b451952",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Design a male avatar character with a light olive skin tone, shoulder-length curly brown hair, a muscular build, standing at 6 feet tall, in his early 30s, only one person in the image.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": null,
+        "seed": 91281408,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "7846748e-2998-46ab-810c-0a5c75e77316",
+        "createdAt": "2023-11-10T16:24:51.827",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/41fa1c74-7a7b-4f57-94a2-b9c9ff229e36/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_0.jpg",
+            "nsfw": false,
+            "id": "08bf26b7-0d4a-49b7-be65-aa81339b1918",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/41fa1c74-7a7b-4f57-94a2-b9c9ff229e36/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_1.jpg",
+            "nsfw": false,
+            "id": "76268812-c6ad-42df-a2b1-10b19a6f9925",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/41fa1c74-7a7b-4f57-94a2-b9c9ff229e36/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_2.jpg",
+            "nsfw": false,
+            "id": "65bb5d40-7262-469e-8fe5-96ac92ef9534",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/41fa1c74-7a7b-4f57-94a2-b9c9ff229e36/3D_Animation_Style_Design_a_male_avatar_character_with_a_light_3.jpg",
+            "nsfw": true,
+            "id": "2fb3e6cc-ad68-465b-84de-39c0c4f28c3a",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Design a male avatar character with a light olive skin tone, shoulder-length curly brown hair, a muscular build, standing at 6 feet tall, in his early 30s.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": null,
+        "seed": 279489024,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "41fa1c74-7a7b-4f57-94a2-b9c9ff229e36",
+        "createdAt": "2023-11-10T16:23:48.01",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/b1d8c078-c952-431c-a91e-0946c8b37804/3D_Animation_Style_A_3D_character_boy_22_year_old_short_black_0.jpg",
+            "nsfw": false,
+            "id": "94a92194-83a9-4276-9de9-78bf5d4605b8",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/b1d8c078-c952-431c-a91e-0946c8b37804/3D_Animation_Style_A_3D_character_boy_22_year_old_short_black_1.jpg",
+            "nsfw": false,
+            "id": "475a9ebf-dd41-4736-837a-fedf10894085",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/b1d8c078-c952-431c-a91e-0946c8b37804/3D_Animation_Style_A_3D_character_boy_22_year_old_short_black_2.jpg",
+            "nsfw": false,
+            "id": "11983757-64c2-4e4b-a27f-15e577075ca1",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/b1d8c078-c952-431c-a91e-0946c8b37804/3D_Animation_Style_A_3D_character_boy_22_year_old_short_black_3.jpg",
+            "nsfw": false,
+            "id": "38a405fb-70c6-429f-aa74-59c82ea89694",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "A 3D character, boy, 22 year old, short black hair, white skin, no beard, wearing round glasses, standing",
+        "negativePrompt": "",
+        "imageHeight": 768,
+        "imageWidth": 512,
+        "inferenceSteps": null,
+        "seed": 332245248,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "b1d8c078-c952-431c-a91e-0946c8b37804",
+        "createdAt": "2023-11-10T16:18:58.12",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/44cc1d71-456e-466e-9738-7a005efb19d8/3D_Animation_Style_backpack_boy_male_child_brown_messy_hair_as_0.jpg",
+            "nsfw": false,
+            "id": "b007440a-21e9-4f1a-8b8b-1a48ac7547e7",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "backpack boy, male child, brown messy hair, astronaut outfit, brown planet, friendly aliens gray with white, humanoid shape, in the sky only space and rocket star parked in the background, anime, super super realistic.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 367665920,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "44cc1d71-456e-466e-9738-7a005efb19d8",
+        "createdAt": "2023-11-10T09:43:18.131",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f4c06607-eadf-4eaf-a30a-941e1582efcf/3D_Animation_Style_Draw_Lucas_a_smiling_boy_holding_his_faithf_0.jpg",
+            "nsfw": false,
+            "id": "7feb972c-8278-487a-9069-947bd2fa9124",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Draw Lucas, a smiling boy, holding his faithful friend, Bolt, the dog, as they walk through the forest together.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 382162432,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "f4c06607-eadf-4eaf-a30a-941e1582efcf",
+        "createdAt": "2023-11-10T08:48:21.206",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/470c059d-56d8-4815-b2e3-8e9b694d739c/3D_Animation_Style_Draw_Lucas_a_smiling_boy_holding_his_faithf_0.jpg",
+            "nsfw": false,
+            "id": "b3703af4-1c11-45d6-a278-db898a25b866",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "Draw Lucas, a smiling boy, holding his faithful friend, Bolt, the dog, as they walk through the forest together.",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 541085184,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "470c059d-56d8-4815-b2e3-8e9b694d739c",
+        "createdAt": "2023-11-10T08:48:08.286",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/bb87da3b-205d-49e2-9220-444feec837ec/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_0.jpg",
+            "nsfw": true,
+            "id": "140e2364-d66c-4821-bc5f-2e00a8c87b76",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "View of a 3d 22 years old man doing push up, black hair, gym clothes",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 461474304,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.45,
+        "guidanceScale": 7,
+        "id": "bb87da3b-205d-49e2-9220-444feec837ec",
+        "createdAt": "2023-11-10T02:09:30.225",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/028af44c-4669-47f8-a269-c06fc463a689/3D_Animation_Style_A_3d_22_year_old_man_with_black_hair_doing_0.jpg",
+            "nsfw": false,
+            "id": "c6e83c61-7c70-403f-a32c-502be8097ecf",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "A 3d 22 year old man with black hair doing push up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 642935808,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": null,
+        "initStrength": 0.45,
+        "guidanceScale": 15,
+        "id": "028af44c-4669-47f8-a269-c06fc463a689",
+        "createdAt": "2023-11-10T01:55:30.404",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/047fe03e-11f8-4db1-a2db-d3e3a2fe93ac/Default_A_22_year_old_man_with_black_hair_doing_push_up_0.jpg",
+            "nsfw": true,
+            "id": "fb24c26b-61ae-4c9f-8945-63cf95b890f2",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": null,
+        "prompt": "A 22 year old man with black hair doing push up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 202009088,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": null,
+        "initStrength": 0.45,
+        "guidanceScale": 15,
+        "id": "047fe03e-11f8-4db1-a2db-d3e3a2fe93ac",
+        "createdAt": "2023-11-10T01:48:19.97",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/61051652-c354-42b1-a0c8-f107eb5c6373/Leonardo_Creative_An_oil_painting_of_a_cat_0.jpg",
+            "nsfw": false,
+            "id": "33c63926-aaa5-4e90-80c2-47609c281af7",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/61051652-c354-42b1-a0c8-f107eb5c6373/Leonardo_Creative_An_oil_painting_of_a_cat_1.jpg",
+            "nsfw": false,
+            "id": "cc92cf6e-bcfa-408d-99d1-f452b4f18f4b",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/61051652-c354-42b1-a0c8-f107eb5c6373/Leonardo_Creative_An_oil_painting_of_a_cat_2.jpg",
+            "nsfw": false,
+            "id": "75ea9c56-1306-44e6-86f9-ea794dffeeb5",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/61051652-c354-42b1-a0c8-f107eb5c6373/Leonardo_Creative_An_oil_painting_of_a_cat_3.jpg",
+            "nsfw": false,
+            "id": "c62f066b-ea1a-425c-8aaf-04dc939dcf8e",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "6bef9f1b-29cb-40c7-b9df-32b51c1f67d3",
+        "prompt": "An oil painting of a cat",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 30,
+        "seed": 914268160,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v2",
+        "status": "COMPLETE",
+        "presetStyle": null,
+        "initStrength": null,
+        "guidanceScale": 7,
+        "id": "61051652-c354-42b1-a0c8-f107eb5c6373",
+        "createdAt": "2023-11-10T01:40:55.687",
+        "promptMagic": false,
+        "promptMagicVersion": null,
+        "promptMagicStrength": null,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f62da40c-9811-4f97-99b3-d58c4db0321b/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_0.jpg",
+            "nsfw": true,
+            "id": "dc94f5c2-a7de-4427-b94a-f958028f58e6",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f62da40c-9811-4f97-99b3-d58c4db0321b/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_1.jpg",
+            "nsfw": false,
+            "id": "59bfb89e-df48-416c-95ae-7884f116dd68",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f62da40c-9811-4f97-99b3-d58c4db0321b/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_2.jpg",
+            "nsfw": true,
+            "id": "5dd12900-d08b-4078-8e4d-3fa814526ea3",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/f62da40c-9811-4f97-99b3-d58c4db0321b/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_3.jpg",
+            "nsfw": false,
+            "id": "87d64766-f09f-41de-8f0b-589e055fcf21",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "A 22 year old man with black hair doing push up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 427474688,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": null,
+        "initStrength": 0.45,
+        "guidanceScale": 15,
+        "id": "f62da40c-9811-4f97-99b3-d58c4db0321b",
+        "createdAt": "2023-11-09T16:02:12.227",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/070b4e3d-b091-442d-955f-a97d012bebcc/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_0.jpg",
+            "nsfw": true,
+            "id": "c560bb4f-ea86-45d7-9aee-fb3dc168550c",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/070b4e3d-b091-442d-955f-a97d012bebcc/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_1.jpg",
+            "nsfw": true,
+            "id": "dfb33f63-ac8e-423e-9d05-9c58a13760d6",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/070b4e3d-b091-442d-955f-a97d012bebcc/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_2.jpg",
+            "nsfw": false,
+            "id": "251a30fd-06c7-4075-b204-7640ab3286c0",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/070b4e3d-b091-442d-955f-a97d012bebcc/3D_Animation_Style_A_22_year_old_man_with_black_hair_doing_pus_3.jpg",
+            "nsfw": false,
+            "id": "09008643-9332-4849-8590-7c1a523edace",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "A 22 year old man with black hair doing push up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 850664448,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "RENDER_3D",
+        "initStrength": 0.45,
+        "guidanceScale": 15,
+        "id": "070b4e3d-b091-442d-955f-a97d012bebcc",
+        "createdAt": "2023-11-09T15:53:57.63",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/60b725b3-bfac-444d-8acc-19004c3d1e91/Leonardo_Creative_A_22_year_old_man_with_black_hair_doing_push_0.jpg",
+            "nsfw": false,
+            "id": "708611c5-9f7f-48b4-abb4-538e48d3e1d9",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/60b725b3-bfac-444d-8acc-19004c3d1e91/Leonardo_Creative_A_22_year_old_man_with_black_hair_doing_push_1.jpg",
+            "nsfw": false,
+            "id": "70e6d18f-b0fc-42c9-b315-7a4df4f3c2d8",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/60b725b3-bfac-444d-8acc-19004c3d1e91/Leonardo_Creative_A_22_year_old_man_with_black_hair_doing_push_2.jpg",
+            "nsfw": false,
+            "id": "c7b6211c-fb58-447c-9233-ab7b2da64ceb",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/60b725b3-bfac-444d-8acc-19004c3d1e91/Leonardo_Creative_A_22_year_old_man_with_black_hair_doing_push_3.jpg",
+            "nsfw": true,
+            "id": "fc5b2176-936c-4d95-b07a-25021bfd787f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "6bef9f1b-29cb-40c7-b9df-32b51c1f67d3",
+        "prompt": "A 22 year old man with black hair doing push up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 13,
+        "seed": 887273728,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v2",
+        "status": "COMPLETE",
+        "presetStyle": "RENDER_3D",
+        "initStrength": 0.45,
+        "guidanceScale": 15,
+        "id": "60b725b3-bfac-444d-8acc-19004c3d1e91",
+        "createdAt": "2023-11-09T15:52:04.607",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.45,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/99b2742a-314f-4832-8f50-a286a41c1f78/3D_Animation_Style_A_22_year_old_man_doing_pull_up_0.jpg",
+            "nsfw": false,
+            "id": "b7eb4475-e575-481b-8a84-0ec86da5d25e",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/99b2742a-314f-4832-8f50-a286a41c1f78/3D_Animation_Style_A_22_year_old_man_doing_pull_up_1.jpg",
+            "nsfw": false,
+            "id": "6e95b3d3-fb43-48a2-8e64-7cd918cd22e0",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/99b2742a-314f-4832-8f50-a286a41c1f78/3D_Animation_Style_A_22_year_old_man_doing_pull_up_2.jpg",
+            "nsfw": false,
+            "id": "22d4f809-d8a8-416a-a330-fa69d024968f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/99b2742a-314f-4832-8f50-a286a41c1f78/3D_Animation_Style_A_22_year_old_man_doing_pull_up_3.jpg",
+            "nsfw": true,
+            "id": "b1141bc2-48a5-462f-b8c3-0815629d01cf",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "A 22 year old man doing pull up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 30,
+        "seed": 432466688,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": null,
+        "initStrength": null,
+        "guidanceScale": 7,
+        "id": "99b2742a-314f-4832-8f50-a286a41c1f78",
+        "createdAt": "2023-11-09T15:43:54.202",
+        "promptMagic": false,
+        "promptMagicVersion": null,
+        "promptMagicStrength": null,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/187d27a0-c5cb-44a8-902e-5ada3a06f004/Leonardo_Creative_A_22_year_old_man_doing_pull_up_0.jpg",
+            "nsfw": false,
+            "id": "11dc5618-e181-4b67-8d42-01be9a458c01",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/187d27a0-c5cb-44a8-902e-5ada3a06f004/Leonardo_Creative_A_22_year_old_man_doing_pull_up_1.jpg",
+            "nsfw": false,
+            "id": "f5099c3a-6aec-417e-8287-f740acf0d80e",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/187d27a0-c5cb-44a8-902e-5ada3a06f004/Leonardo_Creative_A_22_year_old_man_doing_pull_up_2.jpg",
+            "nsfw": false,
+            "id": "c3911860-658b-43b3-9fd3-51406b906b36",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/187d27a0-c5cb-44a8-902e-5ada3a06f004/Leonardo_Creative_A_22_year_old_man_doing_pull_up_3.jpg",
+            "nsfw": true,
+            "id": "2bfa9479-74e5-40b2-b54e-365bb2e27a23",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "6bef9f1b-29cb-40c7-b9df-32b51c1f67d3",
+        "prompt": "A 22 year old man doing pull up",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "inferenceSteps": 30,
+        "seed": 580866304,
+        "public": false,
+        "scheduler": "EULER_DISCRETE",
+        "sdVersion": "v2",
+        "status": "COMPLETE",
+        "presetStyle": null,
+        "initStrength": null,
+        "guidanceScale": 7,
+        "id": "187d27a0-c5cb-44a8-902e-5ada3a06f004",
+        "createdAt": "2023-11-09T15:41:21.31",
+        "promptMagic": false,
+        "promptMagicVersion": null,
+        "promptMagicStrength": null,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/21474c68-fcf9-49d7-a3c7-c8f8dc07a4e0/3D_Animation_Style_A_22_year_old_man_with_black_hair_giving_a_0.jpg",
+            "nsfw": false,
+            "id": "f47e8b1b-4c0b-4147-8a5b-1ed7d652fa29",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/21474c68-fcf9-49d7-a3c7-c8f8dc07a4e0/3D_Animation_Style_A_22_year_old_man_with_black_hair_giving_a_1.jpg",
+            "nsfw": true,
+            "id": "642771b2-78cf-4acb-8452-cfd83333596c",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/21474c68-fcf9-49d7-a3c7-c8f8dc07a4e0/3D_Animation_Style_A_22_year_old_man_with_black_hair_giving_a_2.jpg",
+            "nsfw": true,
+            "id": "8368e25b-1c73-41b4-b9a6-13fc93e5cd40",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/21474c68-fcf9-49d7-a3c7-c8f8dc07a4e0/3D_Animation_Style_A_22_year_old_man_with_black_hair_giving_a_3.jpg",
+            "nsfw": true,
+            "id": "3862c8c9-063a-4c82-a354-f37bf6c4c97f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "A 22 year old man with black hair giving a dumbbell to a 14 years old boy with blonde hair",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 768,
+        "inferenceSteps": null,
+        "seed": 478765312,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "21474c68-fcf9-49d7-a3c7-c8f8dc07a4e0",
+        "createdAt": "2023-11-09T15:03:48.192",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/cc84c1ba-8ebe-42b0-b33d-47409972c5ed/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_0.jpg",
+            "nsfw": true,
+            "id": "e1407ae4-1800-4be7-bcb7-c6fcec3671e9",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/cc84c1ba-8ebe-42b0-b33d-47409972c5ed/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_1.jpg",
+            "nsfw": true,
+            "id": "0648cd3c-7226-491a-9c92-f71b6aa94dea",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/cc84c1ba-8ebe-42b0-b33d-47409972c5ed/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_2.jpg",
+            "nsfw": false,
+            "id": "1593a22f-f725-4a85-a14e-465ec03df862",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/cc84c1ba-8ebe-42b0-b33d-47409972c5ed/3D_Animation_Style_View_of_a_3d_22_years_old_man_doing_push_up_3.jpg",
+            "nsfw": true,
+            "id": "5e0baf64-b461-44e8-ae92-7c645347ed5d",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "View of a 3d 22 years old man doing push up, black hair, gym clothes",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 768,
+        "inferenceSteps": null,
+        "seed": 774392576,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "cc84c1ba-8ebe-42b0-b33d-47409972c5ed",
+        "createdAt": "2023-11-09T14:53:34.475",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      },
+      {
+        "generated_images": [
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/ae49e375-9a06-4618-acbc-56ad3ba6f524/3D_Animation_Style_View_of_3d_man_holding_a_soda_can_0.jpg",
+            "nsfw": false,
+            "id": "2d838f11-20f4-49b0-8425-e5cf2d2b360f",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/ae49e375-9a06-4618-acbc-56ad3ba6f524/3D_Animation_Style_View_of_3d_man_holding_a_soda_can_1.jpg",
+            "nsfw": false,
+            "id": "8a574ace-69f1-4337-af3f-d554f19802c7",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/ae49e375-9a06-4618-acbc-56ad3ba6f524/3D_Animation_Style_View_of_3d_man_holding_a_soda_can_2.jpg",
+            "nsfw": false,
+            "id": "4ece698f-52b7-4b13-85a0-2345c8f16162",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          },
+          {
+            "url": "https://cdn.leonardo.ai/users/154e3741-deff-4366-a831-5b69912fba62/generations/ae49e375-9a06-4618-acbc-56ad3ba6f524/3D_Animation_Style_View_of_3d_man_holding_a_soda_can_3.jpg",
+            "nsfw": false,
+            "id": "46fb4b1a-4e59-4e5b-a2fa-40de9c2ffaed",
+            "likeCount": 0,
+            "generated_image_variation_generics": []
+          }
+        ],
+        "modelId": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "prompt": "View of 3d man holding a soda can",
+        "negativePrompt": "",
+        "imageHeight": 512,
+        "imageWidth": 768,
+        "inferenceSteps": null,
+        "seed": 342017536,
+        "public": true,
+        "scheduler": "LEONARDO",
+        "sdVersion": "v1_5",
+        "status": "COMPLETE",
+        "presetStyle": "DYNAMIC",
+        "initStrength": 0.5,
+        "guidanceScale": 15,
+        "id": "ae49e375-9a06-4618-acbc-56ad3ba6f524",
+        "createdAt": "2023-11-09T14:51:04.095",
+        "promptMagic": true,
+        "promptMagicVersion": "v3",
+        "promptMagicStrength": 0.5,
+        "photoReal": false,
+        "photoRealStrength": null,
+        "generation_elements": []
+      }
+    ]
+  }
