@@ -4,7 +4,7 @@ import { styled } from 'nativewind';
 import React from 'react';
 import { View, Text, ScrollView, Pressable } from 'react-native';
 
-import { useAuth } from '../../context/AuthProvider';
+import { useAuth } from '../context/AuthProvider';
 
 const StyledScrollView = styled(ScrollView);
 const StyledView = styled(View);

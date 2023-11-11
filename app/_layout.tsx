@@ -36,6 +36,14 @@ const Layout = (props: Props) => {
                         }}
                     />
                     <Stack.Screen
+                        name="profile"
+                        options={{
+                            // Set the presentation mode to modal for our modal route.
+                            presentation: 'fullScreenModal',
+                            title: 'Profile',
+                        }}
+                    />
+                    <Stack.Screen
                         name="challenge-modal/[id]"
                         options={{
                             presentation: 'modal',
