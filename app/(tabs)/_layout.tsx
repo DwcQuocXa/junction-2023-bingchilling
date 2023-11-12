@@ -29,6 +29,7 @@ const Layout = () => {
                     tabBarIcon: ({ color }) => (
                         <AntDesign name="linechart" size={24} color={color} />
                     ),
+                    title: 'Progress',
                     tabBarActiveTintColor: '#F0F0F0',
                     tabBarInactiveTintColor: '#191919',
                     tabBarInactiveBackgroundColor: '#F0F0F0',
