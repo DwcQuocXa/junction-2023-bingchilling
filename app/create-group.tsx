@@ -13,9 +13,9 @@ const FriendItem = ({ name, image, onSelect, isSelected }) => {
                 <Image source={{ uri: image }} style={styles.friendImage} />
                 <Text style={styles.friendName}>{name}</Text>
             </View>
-            <TouchableOpacity style={[styles.checkbox, isSelected && styles.checkboxSelected]}>
+            <View style={styles.checkbox}>
                 {isSelected && <View style={styles.checkboxInner} />}
-            </TouchableOpacity>
+            </View>
         </TouchableOpacity>
     );
 };
@@ -154,9 +154,6 @@ const styles = StyleSheet.create({
         borderColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    checkboxSelected: {
-        backgroundColor: 'lightblue', // or another color to indicate selection
     },
     checkboxInner: {
         height: 12,
