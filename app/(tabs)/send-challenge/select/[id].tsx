@@ -1,3 +1,4 @@
+import { MaterialCommunityIcons, FontAwesome5 } from '@expo/vector-icons';
 import { Picker } from '@react-native-picker/picker';
 import { Stack, router, useGlobalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
@@ -31,6 +32,12 @@ export const AGE_LIMIT = {
         min: 0,
         max: 10,
     },
+};
+
+const ICON_MAP = {
+    Mindfullness: <MaterialCommunityIcons name="meditation" size={24} color="black" />,
+    Physical: <MaterialCommunityIcons name="arm-flex" size={24} color="black" />,
+    'For kid': <FontAwesome5 name="child" size={24} color="black" />,
 };
 
 export const CATEGORIES = ChallengeData.images
@@ -70,7 +77,10 @@ const SelectChallenge = () => {
     const renderCategory = ({ item }) =>
         item.data.length > 0 && (
             <View style={styles.categoryContainer}>
-                <Text style={styles.categoryTitle}>{item.category}</Text>
+                <View style={styles.headerContainer}>
+                    {ICON_MAP[item.category]}
+                    <Text style={styles.categoryTitle}>{item.category}</Text>
+                </View>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                     {item.data.map((subitem: ACTIVITY, index: number) => (
                         <TouchableOpacity
@@ -127,9 +137,12 @@ const SelectChallenge = () => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 20, // Adjust as needed for your layout
+        paddingTop: 20, // Adjust as needed for your layout
         alignItems: 'center',
         backgroundColor: 'white',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
     },
     categoryContainer: {
         marginBottom: 20,
@@ -137,6 +150,12 @@ const styles = StyleSheet.create({
         marginLeft: 8,
         marginRight: 8,
         borderRadius: 10,
+    },
+    headerContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginLeft: 8,
     },
     categoryTitle: {
         fontSize: 20,
@@ -183,11 +202,12 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         paddingVertical: 10,
         backgroundColor: '#0085FF',
-        marginTop: 200,
+        marginBottom: 50,
     },
     picker: {
         height: 50,
         width: 200,
+        marginBottom: 150,
     },
 });
 

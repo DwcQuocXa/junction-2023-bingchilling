@@ -76,8 +76,9 @@ const Confirm = () => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#fff',
         padding: 20,
+        height: '100%',
     },
     scrollContainer: {
         alignItems: 'center',
@@ -140,8 +141,8 @@ const styles = StyleSheet.create({
     button: {
         backgroundColor: '#0085FF',
         padding: 10,
-        borderRadius: 5,
-        paddingHorizontal: 40,
+        borderRadius: 15,
+        paddingHorizontal: 50,
     },
     buttonText: {
         color: '#fff',

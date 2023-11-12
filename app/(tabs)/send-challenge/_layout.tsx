@@ -5,13 +5,13 @@ const Layout = () => {
     return (
         <Stack>
             <Stack.Screen
-                name="confirm"
+                name="select"
                 options={{
                     headerShown: false, //header shown or not
                 }}
             />
             <Stack.Screen
-                name="select"
+                name="confirm"
                 options={{
                     headerShown: false, //header shown or not
                 }}
