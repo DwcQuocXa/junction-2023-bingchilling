@@ -49,10 +49,7 @@ const CreateGroup = () => {
                 onChangeText={setQuery}
                 style={styles.searchBar}
             />
-            <TouchableOpacity
-                style={styles.createGroupButton}
-                onPress={() => router.push('/(tabs)/chat')}
-            >
+            <TouchableOpacity style={styles.createGroupButton} onPress={() => router.push('/chat')}>
                 <Text>Create group</Text>
             </TouchableOpacity>
             <TextInput style={styles.newGroupButton} placeholder="Group name" />
