@@ -14,7 +14,7 @@ import {
 import ChallengeData from '../../../../assets/images/challenges.json';
 import UserData from '../../../../assets/users.json';
 
-interface ACTIVITY {
+export interface ACTIVITY {
     id: string;
     activity: string;
     category: string;
@@ -22,7 +22,7 @@ interface ACTIVITY {
     description?: string;
 }
 
-const AGE_LIMIT = {
+export const AGE_LIMIT = {
     Y: {
         min: 10,
         max: 30,
@@ -33,7 +33,7 @@ const AGE_LIMIT = {
     },
 };
 
-const CATEGORIES = ChallengeData.images
+export const CATEGORIES = ChallengeData.images
     .map((x) => x.category)
     .filter((value, index, array) => array.indexOf(value) === index);
 
@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 20, // Adjust as needed for your layout
         alignItems: 'center',
+        backgroundColor: 'white',
     },
     categoryContainer: {
         marginBottom: 20,

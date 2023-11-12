@@ -7,9 +7,9 @@ import { AuthProvider } from '../context/AuthProvider';
 type Props = object;
 
 const Layout = (props: Props) => {
-    useEffect(() => {
+    /*useEffect(() => {
         router.replace('/challenge-modal/challenge-reminder-modal');
-    }, []);
+    }, []);*/
     return (
         <SafeAreaProvider>
             <AuthProvider>
@@ -33,6 +33,30 @@ const Layout = (props: Props) => {
                             // Set the presentation mode to modal for our modal route.
                             presentation: 'fullScreenModal',
                             title: 'Choose your avatar',
+                        }}
+                    />
+                    <Stack.Screen
+                        name="profile"
+                        options={{
+                            // Set the presentation mode to modal for our modal route.
+                            presentation: 'fullScreenModal',
+                            title: 'Profile',
+                        }}
+                    />
+                    <Stack.Screen
+                        name="add-friend"
+                        options={{
+                            // Set the presentation mode to modal for our modal route.
+                            presentation: 'fullScreenModal',
+                            title: 'Add friend',
+                        }}
+                    />
+                    <Stack.Screen
+                        name="create-group"
+                        options={{
+                            // Set the presentation mode to modal for our modal route.
+                            presentation: 'fullScreenModal',
+                            title: 'Create group',
                         }}
                     />
                     <Stack.Screen
