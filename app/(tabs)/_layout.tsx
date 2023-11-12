@@ -6,6 +6,8 @@ import { View, StyleSheet } from 'react-native';
 import Icon from '../../assets/bolt.svg';
 import IconBlack from '../../assets/bolt_black.svg';
 
+import ChatHeader from '../../components/header/ChatHeader';
+
 const Layout = () => {
     return (
         <Tabs>
@@ -65,6 +67,7 @@ const Layout = () => {
             <Tabs.Screen
                 name="chat"
                 options={{
+                    headerTitle: ChatHeader,
                     tabBarLabel: 'Chat',
                     tabBarIcon: ({ color }) => (
                         <AntDesign name="message1" size={24} color={color} />
